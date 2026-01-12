@@ -15,28 +15,8 @@
         "title": "The ARC Protocol | Adversarial Reasoning Cycle",
         "description": "A systematic framework for deconstructing complex problems into irreducible laws. The core operating system of Demand.io."
     },
-	"analog-protocol": {
+    "analog-protocol": {
         "title": "The Analog Protocol | Kinetic Intelligence",
-        "description": "Why the System Architect needs the Machine. Cars, Tennis, and Music as essential counterbalances to digital abstraction."
-    },
-    "kinetic_01": {
-        "title": "Spatial Physics | Kinetic Intelligence",
-        "description": "Architecture as programming. Balancing aesthetics, Feng Shui, and utility to create a 'Low Entropy' environment."
-    },
-    "kinetic_02": {
-        "title": "Gravity Management | Kinetic Intelligence",
-        "description": "Forced mindfulness. The discipline of finding flow in high-consequence terrain."
-    },
-    "kinetic_03": {
-        "title": "Harmonic Integrity | Kinetic Intelligence",
-        "description": "Analog mastery. A creative loop that requires zero digital intervention."
-    },
-    "kinetic_04": {
-        "title": "Adversarial Composure | Kinetic Intelligence",
-        "description": "The Science of 8 Limbs. Algorithmic calm under direct physical threat."
-    },
-    "kinetic_05": {
-        "title": "Hydrostatic Exploration | Kinetic Intelligence",
-        "description": "The regulator protocol. Panic at depth is fatal; calm is mandatory."
+        "description": "The Kinetic Stack: Ferrari, Muay Thai, Tennis, and Scuba as essential counterbalances to digital abstraction. Calibrating the human machine."
     }
 }
