@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/treatise.njk",
+  "tags": "kinetics",
+  "permalink": "/kinetics/{{ title | slug }}/"
+}

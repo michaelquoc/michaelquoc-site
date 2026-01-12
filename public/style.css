@@ -1,0 +1,474 @@
+/* --- KERNEL: THE ROSSO STANDARD (v2.3 - Aligned) --- */
+:root {
+    /* PALETTE */
+    --carbon: #050505;
+    --concrete: #111111;
+    --scuderia-red: #DC0000;
+    --brand-pink: #DC0000; /* Alias */
+    
+    /* TYPOGRAPHY COLORS */
+    --text-primary: #EDEDED;
+    --text-secondary: #888888;
+    
+    /* DIMENSIONS */
+    --nav-height: 80px;
+    --container-width: 1100px; /* The Global Standard */
+    --edge-padding: 2rem;      /* The Global Gutter */
+    
+    /* FONTS */
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-code: 'JetBrains Mono', monospace;
+    --border-dim: #222222;
+    --border-alpha: rgba(255, 255, 255, 0.1);
+}
+
+/* --- BASE PHYSICS --- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--carbon);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Background Grid */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: -1;
+    pointer-events: none;
+}
+
+a { text-decoration: none; color: inherit; transition: all 0.2s ease; }
+a:hover { color: #FFF; }
+
+/* --- TYPOGRAPHY --- */
+h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: 600; color: #FFF; }
+
+.h1-hero {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+}
+
+.h2-section {
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+    color: var(--scuderia-red);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+    display: inline-block;
+    border-bottom: 1px solid var(--scuderia-red);
+    padding-bottom: 4px;
+}
+
+.h3-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #FFF;
+    letter-spacing: -0.01em;
+}
+
+.mono-label {
+    font-family: var(--font-code);
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.body-text {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    max-width: 65ch;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+/* --- LAYOUT UTILITIES --- */
+/* The Central Column */
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    padding: 0 var(--edge-padding);
+    margin: 0 auto;
+}
+
+/* Sections */
+.section {
+    padding: 5rem 0;
+    border-bottom: 1px solid var(--border-alpha);
+}
+.section:last-child { border-bottom: none; }
+
+/* --- COMPONENT: SYSTEM HEADER --- */
+.system-header {
+    width: 100%;
+    height: var(--nav-height);
+    border-bottom: 1px solid var(--border-alpha);
+    position: sticky;
+    top: 0;
+    background: rgba(5, 5, 5, 0.95);
+    backdrop-filter: blur(12px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Centers the inner container */
+}
+
+.header-inner {
+    width: 100%;
+    max-width: var(--container-width);
+    padding: 0 var(--edge-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.brand-monogram { display: flex; align-items: center; gap: 10px; }
+.system-nav { display: flex; gap: 2rem; align-items: center; }
+.system-nav a { font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; }
+.system-nav a:hover { color: #FFF; }
+.system-status { font-family: var(--font-code); font-size: 0.65rem; color: var(--scuderia-red); border: 1px solid rgba(220,0,0,0.3); padding: 2px 6px; border-radius: 4px; }
+
+/* --- COMPONENT: SYSTEM FOOTER --- */
+.system-footer {
+    width: 100%;
+    border-top: 1px solid var(--border-alpha);
+    background: var(--carbon);
+    margin-top: auto;
+    padding-top: 6rem;    /* Increased breathing room */
+    padding-bottom: 4rem;
+}
+
+/* The Grid Alignment */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4rem; /* Wider gap for elegance */
+    margin-bottom: 6rem; /* Space before copyright */
+    
+    width: 100%;
+    max-width: var(--container-width);
+    padding: 0 var(--edge-padding);
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* The "Header" of each column */
+.footer-label {
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.25rem; /* Critical spacing fix */
+    display: block;
+    opacity: 0.7;
+}
+
+/* The Content of each column */
+.footer-val, .footer-links a { 
+    font-size: 0.95rem; 
+    color: #EAEAEA; 
+    margin-bottom: 0.75rem; 
+    display: block; 
+    font-weight: 300;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover { 
+    color: var(--scuderia-red); 
+    text-decoration: none; 
+}
+
+.copyright-line {
+    width: 100%;
+    max-width: var(--container-width);
+    padding: 2rem var(--edge-padding) 0 var(--edge-padding);
+    margin: 0 auto;
+    border-top: 1px dashed var(--border-dim);
+    font-family: var(--font-code);
+    font-size: 0.7rem;
+    color: #444; /* Dimmer for subtle look */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* The Grid Alignment Fix */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+    /* Alignment Inheritance */
+    width: 100%;
+    max-width: var(--container-width);
+    padding: 0 var(--edge-padding);
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.footer-val, .footer-links a { font-size: 0.9rem; color: #CCC; margin-bottom: 0.5rem; display: block; }
+.footer-links a:hover { color: #FFF; text-decoration: underline; }
+
+.copyright-line {
+    width: 100%;
+    max-width: var(--container-width);
+    padding: 2rem var(--edge-padding) 0 var(--edge-padding); /* Matches grid padding */
+    margin: 0 auto;
+    border-top: 1px dashed var(--border-dim);
+    font-family: var(--font-code);
+    font-size: 0.7rem;
+    color: #555;
+}
+
+/* --- CARDS --- */
+.card, .physics-card, .kinetic-card {
+    background: var(--concrete);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+    text-decoration: none; /* No underline on text */
+    color: inherit; /* Inherit text color */
+}
+
+/* Physics Card Specifics */
+.physics-card { 
+    border-left: 2px solid var(--border-dim); 
+    border-top: 0; border-right: 0; border-bottom: 0; 
+}
+
+/* INTERACTION MODEL: Color Shift Only (No Movement) */
+.physics-card:hover { 
+    border-left-color: var(--scuderia-red); 
+    background: #161616; 
+    cursor: pointer;
+}
+
+/* HOVER: Sharp contrast */
+.card:hover, .kinetic-card:hover { 
+    border-color: var(--scuderia-red); 
+    background: #161616;
+    /* Optional: Add a subtle glow for "Active" feel */
+    box-shadow: 0 0 20px rgba(220, 0, 0, 0.1);
+}
+
+/* Grid Layouts */
+.kinetic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    :root { --edge-padding: 1.5rem; }
+    .footer-grid { gap: 3rem; }
+}
+
+/* --- ANIMATION: System Pulse --- */
+@keyframes system-pulse {
+    0% { opacity: 0.7; box-shadow: 0 0 0 rgba(220, 0, 0, 0); }
+    50% { opacity: 1.0; box-shadow: 0 0 8px rgba(220, 0, 0, 0.3); }
+    100% { opacity: 0.7; box-shadow: 0 0 0 rgba(220, 0, 0, 0); }
+}
+
+.system-status {
+    /* Existing styles... */
+    animation: system-pulse 4s infinite ease-in-out;
+}
+
+/* --- TREATISE MASTER LAYOUT (V6: RHYTHM FIX) --- */
+
+/* 1. The Physics Engine (The Grid) */
+.treatise-grid {
+    display: grid;
+    grid-template-columns: 220px 1fr; 
+    gap: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+    align-items: start;
+    position: relative;
+}
+
+/* 2. The Sidebar Console */
+.logic-map {
+    position: sticky;
+    top: 8rem;
+    height: fit-content;
+    padding-right: 1.5rem;
+    border-right: 1px solid var(--border-dim);
+}
+.logic-map-title {
+    font-family: var(--font-code);
+    font-size: 0.65rem;
+    color: var(--scuderia-red);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.logic-map ul { list-style: none; padding: 0; margin: 0; }
+.logic-map li { margin-bottom: 0.75rem; }
+.logic-map a {
+    display: block;
+    font-family: var(--font-main);
+    font-size: 0.75rem;
+    color: #666;
+    transition: all 0.2s ease;
+}
+.logic-map a:hover { color: #FFF; transform: translateX(4px); }
+
+/* 3. The Article Container */
+.treatise-article {
+    min-width: 0;
+    max-width: 72ch;
+    font-family: var(--font-main);
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #DADADA;
+}
+/* --- TREATISE CODE BLOCKS (The Wrap Fix) --- */
+.treatise-article pre {
+    white-space: pre-wrap;       /* Force text to wrap */
+    word-wrap: break-word;       /* Break long strings if needed */
+    max-width: 100%;             /* Constrain to the column width */
+    
+    background: rgba(255, 255, 255, 0.03); /* Subtle background */
+    border: 1px solid var(--border-alpha);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 2px;
+    overflow-x: hidden;          /* Disable horizontal scroll */
+}
+
+.treatise-article code {
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+    color: #CCC;
+    line-height: 1.5;
+}
+
+
+/* 4. The Header Unit (Grouped Tighter) */
+.treatise-header-grid {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--border-dim);
+    padding-bottom: 3rem;
+}
+
+.treatise-h1 {
+    font-family: var(--font-main);
+    font-weight: 800;
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    /* TIGHTER: Creates a solid block of text */
+    line-height: 0.95; 
+    letter-spacing: -0.04em;
+    color: #FFF;
+    /* REDUCED: Pulls the metadata closer */
+    margin-bottom: 2rem; 
+}
+
+.treatise-meta-block {
+    display: flex;
+    gap: 3rem;
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    /* SUBTLE SEPARATOR */
+    border-top: 1px solid rgba(255,255,255,0.1); 
+    padding-top: 1.5rem;
+}
+
+.treatise-meta-item { display: flex; flex-direction: column; gap: 0.3rem; }
+.treatise-meta-label { opacity: 0.5; font-size: 0.65rem; letter-spacing: 0.05em; }
+.treatise-meta-value { color: #EAEAEA; font-weight: 500; }
+
+/* 5. The Deck (Lead Paragraph) */
+.treatise-deck {
+    font-family: var(--font-main);
+    font-size: 1.35rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #FFF; 
+    margin-bottom: 5rem;
+    padding-left: 2rem;
+    border-left: 2px solid var(--scuderia-red);
+}
+
+/* 6. Axiom Headers (The Critical Grouping Fix) */
+.treatise-article { counter-reset: axiom-counter; } 
+
+.treatise-article h2 {
+    counter-increment: axiom-counter; 
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #FFF;
+    
+    /* SEPARATION: Push away from previous content */
+    margin-top: 7rem; 
+    
+    /* CONNECTION: Pull closer to the text below */
+    margin-bottom: 1.5rem; 
+    
+    line-height: 1.1; 
+    letter-spacing: -0.03em;
+    position: relative;
+}
+
+/* The Label (AXIOM 01) */
+.treatise-article h2::before {
+    content: "AXIOM " counter(axiom-counter, decimal-leading-zero) " // ";
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+    color: var(--scuderia-red);
+    display: block;
+    
+    /* TIGHT GROUPING: This pulls the label onto the headline */
+    margin-bottom: 0.75rem; 
+    
+    letter-spacing: 0.05em;
+    font-weight: 400;
+}
+
+/* 7. Sub-Headers */
+.treatise-article h3 {
+    font-family: var(--font-main);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #EDEDED;
+    margin-top: 3.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* 8. Mobile */
+@media (max-width: 1000px) {
+    .treatise-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .logic-map { display: none; }
+    .treatise-meta-block { flex-wrap: wrap; gap: 2rem; }
+}

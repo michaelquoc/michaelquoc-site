@@ -1,0 +1,130 @@
+---
+layout: layouts/base.njk
+---
+{# --- TIER 2: VISUAL CHASSIS --- #}
+{# This layout defines the "Physics" reading environment. #}
+{# It inherits the global shell from base.njk #}
+
+<div class="treatise-grid">
+    
+    {# --- LEFT COLUMN: LOGIC MAP --- #}
+    <aside class="logic-map">
+        <div class="logic-map-title">LOGIC MAP // INDEX</div>
+        <ul id="logic-map-list">
+            </ul>
+    </aside>
+
+    {# --- CENTER COLUMN: THE CONTENT --- #}
+    <article class="treatise-article">
+        
+        <header class="treatise-header-grid">
+            {# 
+               HIERARCHY LOGIC:
+               1. Use specific Front Matter Title (Visual)
+               2. Fallback to SEO Ledger Title (Data)
+            #}
+            <h1 class="treatise-h1">
+                {{ title or seo_ledger[page.fileSlug].title }}
+            </h1>
+            
+            <div class="treatise-meta-block">
+                <div class="treatise-meta-item">
+                    <span class="treatise-meta-label">DATE</span>
+                    <span class="treatise-meta-value">{{ date | dateDisplay }}</span>
+                </div>
+                <div class="treatise-meta-item">
+                    <span class="treatise-meta-label">GRAVITY</span>
+                    <span class="treatise-meta-value" style="color: var(--scuderia-red);">
+                        {{ gravity | default("100") }} G
+                    </span>
+                </div>
+                <div class="treatise-meta-item">
+                    <span class="treatise-meta-label">CLASS</span>
+                    <span class="treatise-meta-value">PHYSICS</span>
+                </div>
+                <div class="treatise-meta-item">
+                    <span class="treatise-meta-label">PROVENANCE</span>
+                    <span class="treatise-meta-value">{{ provenance | default("PTR CORE") }}</span>
+                </div>
+            </div>
+        </header>
+
+        {# The Deck / Sub-headline #}
+        <div class="treatise-deck">
+            {{ description or seo_ledger[page.fileSlug].description }}
+        </div>
+
+        {# --- THE ATOMIC CONTENT --- #}
+        <div id="treatise-content">
+            {{ content | safe }}
+        </div>
+
+        {# --- FOOTER: ENTITY GRAPH --- #}
+        <footer style="margin-top: 8rem; padding-top: 2rem; border-top: 1px solid var(--border-dim); font-family: 'JetBrains Mono'; font-size: 0.7rem; color: #555; text-transform: uppercase;">
+            <div style="text-align: right;">
+                <span style="color: #888;">ENTITIES:</span><br> 
+                {{ (aeo_entities or []) | join(" / ") }}
+            </div>
+        </footer>
+
+    </article>
+    
+    {# --- RIGHT COLUMN: WHITESPACE BALANCE --- #}
+    <div></div>
+</div>
+
+{# --- SCRIPT: DYNAMIC LOGIC MAP GENERATOR --- #}
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        const listContainer = document.getElementById('logic-map-list');
+        const contentContainer = document.getElementById('treatise-content');
+        
+        // 1. Slugify Function (Standardized for IDs)
+        function slugify(text) {
+            return text.toString().toLowerCase()
+                .trim()
+                .replace(/\s+/g, '-')     
+                .replace(/[^\w\-]+/g, '') 
+                .replace(/\-\-+/g, '-')   
+                .replace(/^-+/, '')       
+                .replace(/-+$/, '');      
+        }
+
+        // 2. Select Targets (H2 and H3 only)
+        // We scan the content to build the map automatically
+        if(contentContainer) {
+            const headers = contentContainer.querySelectorAll('h2, h3');
+
+            headers.forEach(header => {
+                // Generate ID if missing (ensures anchor links work)
+                if (!header.id) {
+                     header.id = slugify(header.innerText);
+                }
+
+                // 3. Create List Item
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                
+                a.href = '#' + header.id;
+                
+                // Truncate long headers for the sidebar to preserve visual flow
+                let label = header.innerText;
+                if (label.length > 35) {
+                    label = label.substring(0, 35) + '...';
+                }
+                a.innerText = label;
+
+                // Indent H3s slightly for hierarchy
+                if (header.tagName === 'H3') {
+                    a.style.paddingLeft = '12px';
+                    a.style.opacity = '0.6';
+                    a.style.fontSize = '0.7rem';
+                }
+
+                li.appendChild(a);
+                listContainer.appendChild(li);
+            });
+        }
+    });
+</script>

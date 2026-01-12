@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatial Physics | Michael Quoc</title>
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" href="/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        .treatise-grid {
+            display: grid;
+            /* 220px Sidebar | Content | Balance */
+            grid-template-columns: 220px minmax(auto, 680px) 1fr;
+            gap: 3rem;
+            padding-top: 4rem;
+            padding-bottom: 8rem;
+        }
+
+        /* Logic Map Sidebar */
+        .logic-map {
+            position: sticky;
+            top: 8rem;
+            height: fit-content;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            border-right: 1px solid var(--border-dim);
+            padding-right: 1.5rem;
+        }
+        .logic-map ul { list-style: none; padding: 0; margin: 0; }
+        .logic-map li { margin-bottom: 0.75rem; line-height: 1.4; }
+        .logic-map a { color: var(--text-secondary); text-decoration: none; transition: all 0.2s; display: block; }
+        .logic-map a:hover { color: var(--scuderia-red); transform: translateX(4px); }
+
+        /* Typography */
+        h1 { font-size: 3.5rem; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 1.5rem; }
+        article { font-size: 1.1rem; line-height: 1.7; color: #CCC; }
+        article p { margin-bottom: 2rem; }
+        
+        h2 { 
+            font-size: 2rem; 
+            margin-top: 5rem; 
+            padding-top: 2rem; 
+            border-top: 1px solid var(--border-dim); 
+            display: flex; gap: 1rem; align-items: center;
+        }
+        h3 { font-size: 1.3rem; margin-top: 3rem; color: #FFF; }
+        h3::before { content: '//'; color: var(--scuderia-red); font-family: 'JetBrains Mono'; font-size: 1rem; margin-right: 8px; }
+
+        @media (max-width: 1000px) {
+            .treatise-grid { grid-template-columns: 1fr; }
+            .logic-map { display: none; }
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="system-header">
+    <div class="header-inner">
+        <a href="/" class="brand-monogram" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+            <img src="/assets/img/MQIcon_Red.svg" alt="MQ" style="height: 32px; width: auto;">
+        </a>
+        
+        <nav class="system-nav">
+            <a href="/#physics">Physics</a>
+            <a href="/#codex">Codex</a>
+            <div class="system-status">SYSTEM_ACTIVE</div>
+        </nav>
+    </div>
+</header>
+
+    <main class="container">
+        <div class="treatise-grid">
+            
+            <aside class="logic-map">
+                <div style="margin-bottom: 1.5rem; color: #666; font-weight: 600;">LOGIC MAP //</div>
+                <ul>
+                    
+                    
+                </ul>
+            </aside>
+
+            <article>
+                <header>
+                    <div class="mono-label" style="color: var(--scuderia-red); margin-bottom: 1rem;">
+                         
+                        
+                    </div>
+                    <h1>Spatial Physics</h1>
+                    <div style="font-size: 1.25rem; color: #888; margin-bottom: 4rem; line-height: 1.5;">
+                        
+                    </div>
+                </header>
+
+                <p>Architecture is not decoration; it is programming. Whether at my estate or our award-winning headquarters, I design spaces that enforce high-fidelity thought. We balance aesthetic beauty with Feng Shui and utility to create a &quot;Low Entropy&quot; environment.</p>
+<div style="margin-top: 3rem; margin-bottom: 4rem;">
+    <span class="h2-section">01 / The Synesthetic Standard</span>
+    <h3 class="h3-title" style="margin-top: 1rem;">Space is Software.</h3>
+    <p class="body-text">
+        Just as bad code creates technical debt, bad architecture creates "Cognitive Debt." A messy sightline or discordant flow interrupts the background process of the mind. We design for "Energy Flow"—ensuring physical movement mirrors logical clarity.
+    </p>
+</div>
+<div style="margin-bottom: 4rem;">
+    <span class="h2-section">02 / Utility as Art</span>
+    <h3 class="h3-title" style="margin-top: 1rem;">Form follows Purpose.</h3>
+    <p class="body-text">
+        A space must serve its occupant. We reject empty minimalism in favor of "Functional Sovereignty." Every object, texture, and light source has a distinct purpose: to reduce friction and amplify the signal of the work being done.
+    </p>
+</div>
+
+                <footer style="margin-top: 6rem; padding-top: 2rem; border-top: 1px solid var(--border-dim); font-family: 'JetBrains Mono'; font-size: 0.75rem; color: #666;">
+                    <div style="display:flex; justify-content:space-between;">
+                        <div>PROVENANCE: MICHAEL QUOC CORE</div>
+                        
+                        <div>ENTITIES: </div>
+                    </div>
+                </footer>
+            </article>
+
+            <div></div>
+        </div>
+    </main>
+
+    <footer class="system-footer">
+    <div class="footer-grid">
+        
+        <div>
+            <div class="footer-label">OPERATOR</div>
+            <div class="footer-val">Michael Quoc</div>
+            <div class="footer-val" style="opacity: 0.5;">System Architect</div>
+        </div>
+
+        <div>
+            <div class="footer-label">COORDINATES</div>
+            <div class="footer-val">Santa Monica, CA</div>
+            <div class="footer-val" style="opacity: 0.5;" id="footer-date">Initializing...</div>
+            <script>
+                document.getElementById('footer-date').innerText = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+            </script>
+        </div>
+
+        <div>
+            <div class="footer-label">UPLINK</div>
+            <nav class="footer-links">
+                <a href="https://thefirstprinciple.io" target="_blank">Substack (Codex)</a>
+                <a href="https://twitter.com/michaelquoc" target="_blank">X (Twitter)</a>
+                <a href="https://linkedin.com/in/michaelquoc" target="_blank">LinkedIn</a>
+                <a href="https://demand.io" target="_blank">Demand.io</a>
+            </nav>
+        </div>
+
+    </div>
+    
+    <div class="copyright-line">
+        &copy; 2026 Product.ai. All Rights Reserved. // <span style="color: var(--scuderia-red);">Axiomatic Intelligence</span>
+    </div>
+</footer>
+
+    <script>
+        // Auto-Generate IDs for Sidebar Links
+        document.addEventListener("DOMContentLoaded", function() {
+            function slugify(text) {
+                return text.toString().toLowerCase()
+                    .replace(/\s+/g, '-')
+                    .replace(/[^\w\-]+/g, '')
+                    .replace(/\-\-+/g, '-')
+                    .replace(/^-+/, '')
+                    .replace(/-+$/, '');
+            }
+            const headers = document.querySelectorAll('h2, h3');
+            headers.forEach(header => {
+                if (!header.id) header.id = slugify(header.innerText);
+            });
+        });
+    </script>
+
+</body>
+</html>
