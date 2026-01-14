@@ -3,8 +3,8 @@
     /* PALETTE */
     --carbon: #050505;
     --concrete: #111111;
-    --scuderia-red: #DC0000;
-    --brand-pink: #DC0000; /* Alias */
+    --scuderia-red: #FF4F00;
+    --brand-pink: #FF4F00; /* Alias */
     
     /* TYPOGRAPHY COLORS */
     --text-primary: #EDEDED;
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: 600; color: #FFF; }
 .system-nav { display: flex; gap: 2rem; align-items: center; }
 .system-nav a { font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; }
 .system-nav a:hover { color: #FFF; }
-.system-status { font-family: var(--font-code); font-size: 0.65rem; color: var(--scuderia-red); border: 1px solid rgba(220,0,0,0.3); padding: 2px 6px; border-radius: 4px; }
+.system-status { font-family: var(--font-code); font-size: 0.65rem; color: var(--scuderia-red); border: 1px solid rgba(255,79,0,0.3); padding: 2px 6px; border-radius: 4px; }
 
 /* --- COMPONENT: SYSTEM FOOTER --- */
 .system-footer {
@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: 600; color: #FFF; }
     border-color: var(--scuderia-red); 
     background: #161616;
     /* Optional: Add a subtle glow for "Active" feel */
-    box-shadow: 0 0 20px rgba(220, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(255, 79, 0, 0.1);
 }
 
 /* Grid Layouts */
@@ -292,9 +292,9 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: 600; color: #FFF; }
 
 /* --- ANIMATION: System Pulse --- */
 @keyframes system-pulse {
-    0% { opacity: 0.7; box-shadow: 0 0 0 rgba(220, 0, 0, 0); }
-    50% { opacity: 1.0; box-shadow: 0 0 8px rgba(220, 0, 0, 0.3); }
-    100% { opacity: 0.7; box-shadow: 0 0 0 rgba(220, 0, 0, 0); }
+    0% { opacity: 0.7; box-shadow: 0 0 0 rgba(255, 79, 0, 0); }
+    50% { opacity: 1.0; box-shadow: 0 0 8px rgba(255, 79, 0, 0.3); }
+    100% { opacity: 0.7; box-shadow: 0 0 0 rgba(255, 79, 0, 0); }
 }
 
 .system-status {
