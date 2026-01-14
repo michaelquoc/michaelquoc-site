@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "eleventy",
+    "deploy": "npm run build && cp -r _site/* public/",
     "serve": "eleventy --serve"
   },
   "dependencies": {
