@@ -240,7 +240,7 @@ These axioms derive from the Adversarial Reasoning Cycle (ARC)—a protocol for 
 
 The goal is not to reduce jazz to equations. The magic remains. The goal is to reveal the machinery so jazz musicians can work with physics rather than against it. Every claim here has been stress-tested against the lived experience of performance—against what it actually feels like to improvise on the bandstand. The physics explains the music. It does not replace it.
 
-For readers interested in the underlying epistemology: [Axiomatic Intelligence: A Post-Probabilistic Architecture →]
+For readers interested in the underlying epistemology: [Axiomatic Intelligence: A Post-Probabilistic Architecture](/physics/axiomatic-intelligence/)
 
 ### Evidence Trace
 

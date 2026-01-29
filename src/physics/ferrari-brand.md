@@ -228,7 +228,7 @@ These signals function as secure handshakes. They cannot be counterfeited becaus
 
 These axioms derive from the Adversarial Reasoning Cycle (ARC)—a protocol for extracting verified principles from contested information environments. The methodology synthesizes inputs across economics, neuroscience, sociology, and semiotics, then collides them adversarially to forge claims that survive cross-domain attack.
 
-For readers interested in the underlying epistemology: [Axiomatic Intelligence: A Post-Probabilistic Architecture →]
+For readers interested in the underlying epistemology: [Axiomatic Intelligence: A Post-Probabilistic Architecture](/physics/axiomatic-intelligence/)
 
 ## Evidence Trace
 
