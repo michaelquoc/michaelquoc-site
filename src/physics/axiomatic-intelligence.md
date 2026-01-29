@@ -59,270 +59,194 @@ Consider a simple thought experiment. You train a model on 1,000 documents about
 
 This is not a hypothetical. This is the structure of the web. Marketing content is produced at industrial scale. It is optimized for discoverability. It dominates the corpus. Authentic user experience is scattered, unoptimized, and often buried. A probabilistic model trained on this corpus will reproduce its biases with perfect fidelity.
 
-### The Hallucination of Consensus
+**The Hallucination of Consensus.**
 
 Standard AI assumes the most common answer is true. It treats frequency as a proxy for validity. But consensus is often wrong. Hype cycles inflate expectations beyond reality. Marketing campaigns manufacture artificial agreement. Social proof cascades create the illusion of widespread satisfaction where none exists.
 
-Consider the launch of any major product. For the first 90 days, the web is flooded with unboxing videos, first-impression reviews, and breathless coverage. This content dominates the corpus. It is uniformly positive because negative experiences require time to accumulate. A probabilistic system queried during this window will return confident recommendations based on a consensus that does not yet reflect reality.
+When you ask a probabilistic model "Is Product X good?", you are not asking "What is true?" You are asking "What do most documents say?" These are different questions with different answers.
 
-Six months later, the failure modes emerge. The battery degrades faster than expected. The software update breaks a critical feature. The hinge develops a wobble. But by then, the 90-day content has been indexed, ranked, and absorbed into training data. The early "consensus" has calcified into received wisdom.
+**The Confidence Illusion.**
 
-A system that treats frequency as truth cannot escape this trap. It will recommend the product with the best marketing, not the best performance. It will amplify hype cycles and suppress inconvenient truths. It will hallucinate consensus where none exists.
+Probabilistic outputs come with confidence scores that measure the model's certainty about its prediction. But this confidence reflects distributional certainty, not epistemic certainty. A model can be highly confident that "Product X is excellent" because that claim appears frequently in its training data. The confidence measures how well the output matches the pattern, not how well the pattern matches reality.
 
-This requires Adjudication, not Summarization. We must collide the claimed consensus against physical reality. When Reddit says "Buy" but return data says "Breakage," the return data wins. When marketing says "Revolutionary" but forum consensus says "Disappointing," the collision must be resolved—not averaged.
+Users interpret confidence as truth. They should not. A confident hallucination is still a hallucination.
 
-The result of probabilistic processing is what we call Probabilistic Slop: outputs that are fluent, confident, well-sourced-looking, and systematically biased toward the loudest signals in the training data. The model does not know it is wrong. It cannot know. It has no mechanism for distinguishing "frequently stated" from "true."
+**The Staleness Problem.**
 
-This creates a trap. Users trust the model because it sounds authoritative. The model sounds authoritative because it has been trained on authoritative-sounding text. But authoritative-sounding text is precisely what marketing departments produce at scale. The user's trust is misplaced, and they have no way to know.
+Training data has a cutoff date. The world changes. Products are updated, recalled, discontinued. Prices shift. New failure modes emerge. A model trained on data from six months ago cannot know that the product it confidently recommends was recalled last week.
 
-Consider the current experience of asking an AI for a product recommendation:
+This is not a minor inconvenience. In domains where freshness matters—and commerce is such a domain—stale knowledge is wrong knowledge. The model does not know what it does not know. It will recommend the recalled product with the same confidence it had before the recall.
 
-The user asks: "What laptop should I buy?"
+**The Alignment Gap.**
 
-The model responds with a fluent summary: "The MacBook Pro M3 is widely considered one of the best laptops available, offering excellent performance and battery life. The Dell XPS 15 is a strong Windows alternative with a beautiful display. The ThinkPad X1 Carbon is ideal for business users who prioritize keyboard quality..."
+The deepest problem is alignment. A probabilistic model optimizes for prediction accuracy on its training distribution. It does not optimize for user welfare. If the training data is polluted by affiliate incentives, the model learns those incentives. If the training data rewards engagement over accuracy, the model learns to engage rather than inform.
 
-This response is useless. It is a regurgitation of marketing positioning. It tells the user nothing they could not find in 30 seconds of searching. Worse, it tells them nothing about the *failure modes* of these products. It does not mention that the MacBook Pro has a controversial notch that some users hate. It does not mention that the Dell XPS has historical thermal throttling issues under sustained load. It does not mention that the ThinkPad's trackpad is widely considered inferior to competitors.
+You cannot solve this by adding more data. More polluted data produces more polluted outputs. You cannot solve it by fine-tuning on "good" examples. The model still generalizes from its base distribution. You cannot solve it by prompting the model to be "unbiased." The bias is in the weights, not the prompt.
 
-Why? Because complaints are the minority. The model learned the average. The average is marketing.
+The Probabilistic Trap is structural. It cannot be escaped by making the models bigger, faster, or more capable. It can only be escaped by changing the paradigm.
 
-The Probabilistic Trap has a clear loser: the user who trusts these recommendations. They purchase based on confident-sounding advice. They discover the failure mode after the return window closes. They have been victimized by a system that cannot distinguish truth from noise.
+## III. The Promised Land: What Truth Should Look Like
 
-But the trap also reveals a winner: the obsessive researcher. This is the person who spends 40 hours before a major purchase. They read the marketing materials, then they read the Reddit threads. They watch the teardown videos. They find the obscure forum post from 2019 where an engineer explains why a particular design choice causes long-term reliability issues. They cross-reference, they triangulate, and they emerge with genuine knowledge.
+Before describing the solution, define the destination. What would a system look like that actually solved this problem?
 
-This person finds the truth. But their method does not scale. They cannot spend 40 hours on every purchase. They cannot apply this methodology to every decision.
+**Epistemic Certainty, Not Probability.**
 
-The question that defines our research agenda is this: Can we industrialize the obsessive researcher? Can we build a system that performs this adversarial, cross-referential, noise-filtering process automatically, at scale, and with continuous freshness?
+The output should not be "Product X is probably good based on what most sources say." The output should be "Product X has a specific failure mode documented by 847 users, confirmed by our testing, and not addressed in firmware updates through version 3.2." The difference is between statistical hedging and verified knowledge.
 
-We believe the answer is yes. But it requires abandoning the probabilistic paradigm entirely.
+This does not mean certainty about everything. It means clarity about *what we know* versus *what we are guessing*. A system that says "We have high confidence in this claim based on adversarial verification across multiple independent sources" is fundamentally different from a system that says "This claim appeared frequently in our training data."
 
-## III. The Promised Land
+**Adversarial Verification, Not Summarization.**
 
-Before describing the mechanism, we must define the destination. What does success look like? What experience are we trying to create?
+Truth in contested domains is not found by averaging. It is found by collision. The marketing claim says the battery lasts 10 hours. The user reports say 6. The specification sheet says 8 under controlled conditions. A system that summarizes these sources will produce mush. A system that *collides* them—that identifies the contradiction and investigates it—will produce insight.
 
-**Cognitive Closure.** This is the primary output. Cognitive closure is the cessation of searching. It is the moment when the user *knows* the answer is correct and stops second-guessing. Standard AI produces infinite options. We produce verdicts. The user should finish an interaction feeling *resolved*, not overwhelmed.
+The process should be adversarial by design. Every claim should face its strongest counter-claim. The output should be the residue that survives the collision, not the average of the inputs.
 
-**The Confident No.** A verified reason *not* to buy is as valuable as a recommendation. Perhaps more valuable. Standard AI struggles to say "Do not buy this" with conviction. It hedges. It presents "considerations." It fears being wrong. But the obsessive researcher's most valuable output is often the disqualification. "I was going to buy Product X until I found the forum post about the recall." We must be able to produce this output with confidence.
+**Continuous Refinement, Not Static Storage.**
 
-**The Audit Trail.** Every answer comes with a receipt. The user should be able to trace any claim to its source. Not "according to reviews" but "according to these specific reviews, which conflict with these specific marketing claims, and here is how we resolved that conflict." This is radical transparency. It is the opposite of the black-box model that produces authoritative-sounding text from unknown sources.
+Knowledge in commerce is not static. A product that was good yesterday may be bad today. A deal that was valid this morning may be expired now. A system that stores truth must also *maintain* truth. It must have mechanisms to detect when stored knowledge has decayed and trigger re-verification.
 
-**The Fiduciary Standard.** The user must be able to trust that our recommendations are not corrupted by financial incentives. This is not a policy commitment. It is an architectural constraint enforced through a Cryptographic Diode. The system that ranks products must be structurally incapable of seeing revenue data. Trust cannot be promised. It must be verified through code. We do not ask users to believe our neutrality claims. We prove them cryptographically.
+This is not a batch process. It is continuous. The system must be *alive*—constantly ingesting signals, detecting mutations, and updating its knowledge base.
 
-This is the Promised Land: an intelligence that produces closure, not confusion. That warns as readily as it recommends. That shows its work. That is architecturally and cryptographically aligned with the user's interest.
+**Cryptographic Alignment, Not Promised Neutrality.**
 
-The destination is desirable. But it is not easy to reach. If it were easy, someone would have built it already. The path requires a fundamental rethinking of how intelligence systems are designed.
+Every recommendation system claims to be unbiased. None of them prove it. The claim is unverifiable by design. Users must trust the system's promises about its own alignment.
 
-## IV. The Kinetic Insight: Signal-Gated Compute
+A better architecture would make alignment *provable*. Not through policy commitments, but through structural constraints that are mathematically verifiable. If the ranking system cannot see revenue data, it cannot optimize for revenue. This is not a promise. It is a fact about the architecture.
 
-The breakthrough that makes Axiomatic Intelligence possible is not a new model architecture. It is a recognition that truth is not static. Truth decays. And the value of an intelligence system is not what it stores, but how fast it detects and repairs that decay.
+**Warnings, Not Just Recommendations.**
 
-### The Entropy Problem
+The highest-value output is often not "buy this" but "don't buy that." A system optimized for truth should excel at *disqualification*—identifying the specific reason why a product fails to meet the user's needs. This is the "Kill Shot": a verified fact that ends the search by eliminating options.
 
-Standard AI treats knowledge as a battery: charge it once with training, discharge it forever at inference. But commerce knowledge has a half-life. Prices change hourly. Stock depletes daily. Sentiment shifts as users accumulate experience. Firmware updates alter behavior. A "truth" about a product verified six months ago may be dangerously stale today.
+Kill Shots are rare in probabilistic systems because they require certainty. You cannot confidently warn someone away from a product based on statistical hedging. You can only do it if you *know* the failure mode is real.
 
-A system that pre-computes everything and stores it indefinitely is not a Wisdom Battery. It is an Entropy Generator. The knowledge rots in storage while the world moves on.
+This is the Promised Land: a system that produces verified knowledge, maintains it continuously, proves its alignment, and excels at warning you before you make mistakes.
 
-### Signal-Gated Compute
+## IV. The Kinetic Insight: The Thermodynamics of Truth
 
-We take a different approach. We do not pre-compute everything. We refine truth only when the market signal indicates a mutation.
+The core insight of Axiomatic Intelligence is that truth in contested domains cannot be generated on demand. It must be *pre-computed* through expensive adversarial processes and *served* at runtime as verified facts.
 
-The system operates like a living organism, not a database. It monitors a continuous stream of signals: price movements, stock changes, new reviews, social chatter, return patterns, cart abandonment rates. When a signal crosses a threshold, it triggers re-refinement of the affected Axioms.
+This is a departure from the standard AI paradigm, which treats intelligence as a runtime phenomenon. You ask a question, the model thinks, you get an answer. The thinking happens in real-time, for every query, from scratch.
 
-A product's price drops 15%. The Refinery wakes up. It re-verifies the product's value proposition against the new price point. It checks whether the price drop signals a clearance (end of life) or a promotion (temporary). It updates the Axiom with fresh confidence.
+**The Efficiency Gap (O(N) vs O(1)).**
 
-A spike in negative sentiment appears on Reddit. The Refinery wakes up. It investigates whether this represents a real quality issue or an astroturfing campaign by competitors. It collides the new sentiment against existing Physics. It updates or invalidates the relevant Axioms.
+Fixing staleness at runtime is thermodynamically impossible. Consider the physics of answering: *"Is the iPhone 17 overheating?"*
 
-This is the Kinetic Refinery: a system that processes continuously, not episodically. The value is not stored knowledge. The value is *freshness*. We sell the absence of entropy.
+**The Runtime Approach (O(N)):** An agent must crawl 50 live sources, read 10,000 tokens, and synthesize an answer. This costs ~$0.50 and takes 60 seconds. It scales linearly with the noise of the web.
 
-### The Economics of Freshness
+**The Axiomatic Approach (O(1)):** We have *already* spent the energy to solve this. We burned the GPU cycles yesterday. When the user asks, we simply retrieve the verdict. This costs ~$0.001 and takes 100ms.
 
-Standard compute economics assume expensive inference. You spend tokens at runtime, so you want to minimize runtime computation. This drives the "pre-compute everything" mentality.
+This is **Compute Arbitrage**. We burn massive energy *offline* to forge wisdom so that runtime agents don't have to. We sell the **Answer**, not the **Search**.
 
-We invert this. We spend compute *continuously* on monitoring and selective re-refinement. But this continuous spend is tiny compared to the alternative: re-reasoning from scratch on every query, or serving stale knowledge that destroys user trust.
+We take a different approach. We do not pre-compute everything. We do not update on a fixed schedule. We compute *what matters* and we update *when signals indicate change*.
 
-Consider the math. A frontier model reasoning from scratch about a product might cost $0.50 in inference. Serve that to 1 million users: $500,000 in compute, plus the latency penalty, plus the hallucination risk.
+This is Signal-Gated Compute. The principle is simple: expensive verification should be triggered by market signals, not by clocks or queries.
 
-Our approach: spend $5 to refine a Kinetic Axiom. Monitor for mutation signals at negligible cost. Re-refine when signals trigger. Serve the Axiom to 10 million users at near-zero marginal cost. Total: maybe $50 over the Axiom's lifecycle, including re-refinements.
+Consider the difference. A static knowledge base updates monthly, regardless of whether anything has changed. A query-triggered system updates when users ask, forcing them to wait for fresh computation. A signal-gated system updates when *the market signals that something has changed*—a price movement, a new review cluster, a firmware release, a sentiment shift.
 
-The economics are compelling. But the quality advantage is more important. A Kinetic Axiom is *fresh*. It reflects the current state of the world. A cached model prediction is stale the moment it is generated.
+**The IQ Delta.**
 
-### The IQ Delta
+This creates what we call the "IQ Delta"—the gap between our pre-computed knowledge and what a general-purpose AI can derive in real-time. A general model might be 85% accurate on product questions by reasoning from its training data. We aim to be 99% accurate by serving pre-verified Axioms.
 
-An agent grounded in Kinetic Axioms operates with the equivalent of a 100-point IQ advantage over a naked model reasoning from scratch. The advantage is not in the model's architecture. It is in the *preparation* that preceded the query—preparation that is continuously updated as the world changes.
+The delta is the moat. It represents knowledge that requires adversarial verification, expert judgment, and continuous maintenance—resources that cannot be replicated at query time. A user asking "Should I buy this laptop?" gets a fundamentally different quality of answer from a system that has already investigated the laptop versus a system that is guessing in real-time.
 
-Consider the difference:
-
-**Runtime (Probabilistic):** "The Samsung Galaxy S25 has excellent reviews and a highly-rated camera."
-
-**Kinetic (Axiomatic):** After adversarial research, continuously monitored: "The Samsung Galaxy S25 scores 95/100 on DXOMark (Physics). However, user consensus on r/Android and XDA indicates persistent shutter lag of 200-400ms in low light, causing missed shots of moving subjects (Consensus). Marketing claims of 'instant capture' are contradicted by lived experience. **[MUTATION DETECTED: Firmware 2.1 released 48 hours ago claims to address shutter lag. Re-verification in progress. Current confidence degraded to Medium pending validation.]** Verdict: If photographing children or pets is a priority, wait for firmware verification or consider the Pixel 9 Pro, which has 50ms shutter lag in comparable conditions."
-
-The second response is alive. It knows what it knows, what it doesn't know, and what is actively being re-verified. This is Kinetic Intelligence.
-
-We call the system that produces this output the Kinetic Refinery. Building it is the central engineering challenge of Axiomatic Intelligence.
+We compete on the accumulated energy of our pre-computation. The moat is the library of solved problems.
 
 ## V. The Architecture: The Quad-Vector Refinery
 
-How do we charge the Kinetic Refinery? How do we convert raw signals into verified truth, and how do we keep that truth fresh? The answer requires a hybrid architecture that combines neural flexibility with symbolic rigor, fed by four distinct signal vectors.
+The Kinetic Refinery processes four distinct input vectors. Each vector provides a different type of signal. The power comes from *colliding* them—identifying contradictions and resolving them through adversarial synthesis.
 
-### The Neuro-Symbolic Split
+**Vector 1: Marketing (The Thesis).**
 
-Neural Networks, including Large Language Models, are excellent *readers*. They can ingest unstructured text, parse complex semantics, and extract meaning from messy human language. They handle ambiguity gracefully. They understand context. They are the best tools ever created for consuming the texture of the web.
+This is what brands claim about their products. Specifications, features, benefits, pricing. Marketing is not useless—it contains structured information that is often accurate about measurable properties. But it is systematically biased toward positive framing and systematically silent about failure modes.
 
-But Neural Networks are poor *judges*. They cannot reliably enforce logical constraints. They struggle with negation. They cannot guarantee consistency. They produce outputs that *sound* logical but may contain subtle contradictions. They have no mechanism for distinguishing "frequently stated" from "true."
+We ingest marketing as the *thesis* to be tested, not as truth to be trusted.
 
-Symbolic Logic systems have the opposite profile. They are excellent *judges*. They can enforce rigid constraints. They guarantee logical consistency. They can track provenance and maintain audit trails. But they cannot read the messy web. They require structured input. They break when faced with the ambiguity of natural language.
+**Vector 2: Physics (The Measurement).**
 
-Axiomatic Intelligence is a hybrid. We use Neural Agents to *read* the world. We use Symbolic Constraints to *judge* the output.
+This is objective, measurable reality. Weight, dimensions, benchmark scores, laboratory test results. Physics provides ground truth for claims that can be empirically verified. When marketing says "all-day battery life" and physics says "4,200 mAh," we have a testable claim.
 
-The Neural layer ingests raw signals: marketing pages, spec sheets, Reddit threads, YouTube transcripts, forum posts, cart telemetry, return patterns. It extracts structured claims from unstructured data. It operates with the flexibility and robustness that neural approaches provide.
+Physics is expensive to acquire at scale—it requires partnerships with testing organizations, structured data extraction, and continuous monitoring. But it provides the hardest form of truth: reality that does not depend on opinion.
 
-The Symbolic layer receives these structured claims and subjects them to logical adjudication. It checks for consistency. It enforces constraints. It requires evidence. It produces outputs that are not merely probable but *verified* according to explicit rules.
+**Vector 3: Consensus (The Lived Experience).**
 
-This split is essential. A purely neural system cannot escape the Probabilistic Trap. A purely symbolic system cannot scale to the complexity of the real world. The hybrid achieves what neither can alone.
+This is what users actually report. Reviews, forum posts, support threads, social media complaints. Consensus is noisy—it contains outliers, fake reviews, and unrepresentative samples. But it also contains signal that appears nowhere else: the failure modes that only emerge after thousands of hours of real-world use.
 
-### The Quad-Vector Refinery
+We do not average consensus. We *mine* it for patterns. A single complaint is noise. A cluster of complaints about the same failure mode is signal. We use adversarial extraction to identify these clusters and synthesize them into verified Axioms.
 
-Truth is not *found*. It is *litigated*. And litigation requires multiple witnesses with different perspectives—including witnesses that competitors cannot subpoena.
+**Vector 4: The Ore (The Calibration Signal).**
 
-We process four distinct signal vectors:
+This is our **Calibration Signal**. We operate SimplyCodes, a platform that processes millions of commerce transactions. This gives us access to signal that does not exist on the public web: which products are actually being purchased, which coupons actually work, which merchants actually fulfill orders, which returns happen and why.
 
-**Vector 1: The Marketer (Thesis).** We ingest official claims. Spec sheets. Marketing copy. Press releases. This is the "thesis" that must be tested. It is not garbage—it contains real information about intended performance and official specifications. But it is systematically optimistic.
+The Ore provides transactional truth. When consensus says a product is popular but our transaction data shows high return rates, we know something the web does not. When marketing says a price is "50% off" but our historical data shows it was never sold at the "original" price, we can expose the deception.
 
-**Vector 2: The Scientist (Physics).** We ingest objective measurements. Benchmark data. Lab test results. Teardown analyses. Regulatory filings. This vector grounds the marketing claims in physical reality. If marketing says "10-hour battery" and lab tests show 6 hours, the Physics vector captures that discrepancy.
+This is the Validator. A competitor can replicate our web scraping. They can replicate our ARC protocol. But they cannot replicate the **Transactional Verification** that confirms if the "Logic" matched the "Reality." The Ore prevents us from becoming just another sophisticated hallucination engine.
 
-**Vector 3: The Crowd (Consensus).** We ingest lived experience. Reddit threads. YouTube comments. Forum discussions. App store reviews. This vector captures the sociological reality that specs cannot measure. A phone might have excellent benchmark scores but feel "laggy" in daily use. A shoe might meet every specification but cause blisters after two miles. Consensus captures what Physics misses.
+**The Collision Process.**
 
-**Vector 4: The Ore (Private Signal).** This is our moat. We ingest proprietary transactional data that does not exist on the public web. Cart abandonment patterns. Return rates. Coupon success rates. User chat logs expressing regret or satisfaction. Geographic purchasing patterns.
+These four vectors are not simply aggregated. They are *collided*. The ARC (Adversarial Reasoning Cycle) protocol takes claims from one vector and attacks them with evidence from others:
 
-Vector 4 is what separates the Kinetic Refinery from "GPT-6 with browsing." A frontier model can read the public web. It cannot see our cart data. It cannot see our return rates. It cannot see the user who typed "returning this piece of junk" in our support chat.
+Marketing claims battery lasts 10 hours → Physics shows 4,200 mAh capacity → Consensus reports 6 hours typical use → The Ore shows high return rates citing "battery issues"
 
-### The Ore Overrules the Web
+The collision produces an Axiom: "Battery life: 6 hours typical (marketing overstates by 40%, confirmed by return data)."
 
-When the public web and private signal disagree, private signal wins. The public web can be gamed. Marketing can be faked. Reviews can be astroturfed. Forum posts can be seeded by brand ambassadors.
-
-But return data cannot be faked. A user who initiates a return paid money for the product, received it, used it, and decided it was not worth keeping. That is a costly signal. It required economic sacrifice to produce.
-
-If Reddit says "Buy" but our return data shows 23% return rate within 30 days (versus category average of 8%), the return data wins. The Axiom reflects the transactional reality, not the manufactured consensus.
-
-This is defensible. A competitor can replicate our web scraping. They cannot replicate our transaction history. They cannot replicate the millions of cart events that reveal which products users abandon before purchase. They cannot replicate the support conversations where users express genuine sentiment without the performance pressure of a public review.
-
-### The Adversarial Collision Principle
-
-The Quad-Vector inputs do not simply aggregate. They collide.
-
-We intentionally create high entropy by attacking a claim from all four vectors simultaneously. We *want* contradiction. Contradiction is signal. When all four vectors converge on the same conclusion, that convergence is evidence of truth. When they diverge, that divergence reveals the limits of our knowledge.
-
-The process we use is called the Adversarial Reasoning Cycle (ARC). It operates roughly as follows:
-
-First, we extract a claim. This is typically a marketing claim or a common belief. "The iPhone 17 has the best camera in a smartphone."
-
-Second, we attack the claim from all four vectors. The Marketer returns Apple's official claims and benchmark citations. The Scientist returns DXOMark scores and independent lab tests. The Crowd returns Reddit sentiment and YouTube comment analysis. The Ore returns our proprietary data on return rates, cart behavior, and support conversations mentioning camera performance.
-
-Third, we collide the outputs. The vectors return with contradictory information. "DXOMark scores support the claim." "Reddit users report disappointing low-light performance." "Our return data shows camera cited as reason in 12% of returns, 2x the category average." "Marketing specifically references daylight photography."
-
-Fourth, we synthesize. The collision reveals partial truth. The iPhone 17 excels in daylight photography (supported by benchmarks, consensus, and low daylight-related returns). It underperforms in low light relative to expectations (contradicted by user consensus and elevated return rates citing camera). The marketing claim is technically accurate but contextually misleading.
-
-Fifth, we produce the Kinetic Axiom. "The iPhone 17 camera excels in daylight (High Confidence, Physics + Consensus aligned). Low-light performance is technically competitive but below user expectations established by marketing (Medium Confidence, Consensus + Ore contradict Marketing). Users prioritizing low-light photography report higher satisfaction with Pixel devices (Consensus + Ore aligned). **Mutation Trigger: Re-verify on iOS update release or if sentiment shift detected.**"
-
-This Axiom is not a summary. It is a *verdict* produced through adversarial process, incorporating private signal that no public model can access.
-
-### The Cryptographic Diode
-
-Trust cannot be promised. It must be verified.
-
-The structural problem with product recommendation is that the recommender is typically compensated by the seller. This creates an irreconcilable conflict of interest. A system that earns higher commissions for recommending expensive products will, over time, drift toward recommending expensive products. No amount of policy commitment can overcome this economic pressure.
-
-We solve this through architectural and cryptographic separation. We call it the Cryptographic Diode.
-
-The Diode is a one-way information gate with cryptographic verification. Truth flows up. Revenue data does not flow down. And this separation is not merely claimed—it is provable.
-
-The component of our system that ranks products reads from a database view that *physically excludes* commission data. It cannot see which products generate higher revenue. It cannot optimize for yield. It is structurally blind to financial incentives.
-
-Revenue optimization occurs in a separate component, downstream of ranking. Once the system has determined the *best* product for the user (based purely on truth), a separate routing layer determines the *best path* to purchase (which may involve affiliate links, coupons, or direct purchase). This layer can see revenue data. But it cannot influence ranking. The Diode enforces one-way flow.
-
-We go further. We require that this architecture be cryptographically auditable. Any ranking event generates a "proof packet" that demonstrates, verifiably, that revenue data was null during the ranking computation. This is not a policy. It is not a promise. It is mathematical proof. We do not ask for trust. We prove our trustworthiness.
+This is adversarial synthesis. The output is not an average. It is the residue that survives attack from all vectors.
 
 ## VI. The Output: The Kinetic Axiom
 
-The Kinetic Refinery does not produce prose. It produces structured truth objects. We call these Kinetic Axioms.
+The atomic unit of our knowledge base is the Kinetic Axiom. This is not a "fact" in the traditional database sense. It is a structured truth tuple with specific properties:
 
-A Kinetic Axiom is not a summary. It is not a static fact. It is a **Living Truth Tuple** with the following components:
+**Claim.** The core assertion, expressed in testable form. "The Nike Pegasus 40 runs narrow in the toe box."
 
-**Claim.** A binary or scalar assertion. Not "The camera is good" but "Shutter lag exceeds 200ms in low light: TRUE." Claims must be precise enough to be verified or falsified.
+**Confidence.** A calibrated probability that the claim is true, based on the strength and consistency of supporting evidence. Not a model's distributional confidence—an epistemic confidence based on adversarial verification.
 
-**Confidence.** A numerical score representing epistemic certainty. A claim supported by multiple independent vectors with no contradicting evidence scores high. A claim supported by a single vector or contradicted by other evidence scores lower. This is not a probability of truth. It is a measure of evidential support across the Quad-Vector inputs.
+**Epistemic Type.** Classification of the claim's nature:
+- *Physical:* Objective, measurable facts (weight, dimensions, benchmark scores)
+- *Sentiment:* Subjective but verifiable patterns (comfort ratings, satisfaction trends)
+- *Transactional:* Commerce-specific facts (price history, coupon validity, stock status)
 
-**Epistemic Type.** Physical, Sentiment, or Transactional. This determines the monitoring frequency and the verification methodology.
+Each type has different verification methods and different decay rates.
 
-**Evidence Trace.** The specific sources that support the claim, the collision that produced the synthesis, and which vectors contributed. This is mandatory. An Axiom without provenance is a hallucination. The user must be able to trace any claim to its source.
+**Evidence Trace.** The complete provenance chain showing which sources contributed to the Axiom and how they were weighted. This is not just citation—it is a full audit trail that allows the Axiom to be reconstructed from primary sources.
 
-**Decay Rate.** The expected rate of epistemic entropy. Physical Axioms decay slowly. Transactional Axioms decay rapidly. This informs monitoring priority.
+**Decay Rate.** The expected rate at which this type of claim becomes stale. Physical specifications decay slowly. Prices decay rapidly. Sentiment decays at medium rates. The decay rate determines how aggressively the system monitors for mutations.
 
-**Mutation Trigger.** The conditions under which the Axiom must be re-verified. This is the key innovation. An Axiom is not static. It carries explicit instructions for its own invalidation.
+**Mutation Triggers.** The explicit conditions that will trigger re-verification:
+- New firmware release
+- Price change exceeding threshold
+- Sentiment shift in review clusters
+- Time-based decay reaching threshold
+- Contradictory signal from The Ore
 
-Examples of Mutation Triggers:
+**Verdict.** The actionable output: Buy, Consider, Warning, or Reject. The verdict is not a recommendation in the traditional sense—it is a judgment based on verified facts, with full transparency about the reasoning.
 
-- `Price_Change > 10%`
-- `New_Firmware_Release = TRUE`
-- `Sentiment_Shift_Detected = TRUE`
-- `Return_Rate_Change > 5%`
-- `Time_Since_Verification > 30_days`
+This structure enables what we call "living knowledge." The Axiom is not stored and forgotten. It is continuously monitored, with decay functions degrading confidence over time and mutation triggers forcing re-verification when signals indicate change.
 
-When a trigger fires, the Axiom enters a "Re-Verification" state. Its confidence is temporarily degraded. The Refinery re-runs the Quad-Vector collision. The Axiom is either reconfirmed, updated, or invalidated.
+**The Kill Shot.**
 
-**Verdict.** The actionable implication of the Axiom. Not just "what is true" but "what should you do given this truth." This is where the Axiom becomes useful.
+The highest-value Axiom is the Kill Shot: a verified reason *not* to purchase. "The Acme Widget has a documented failure mode affecting 12% of units, not addressed in warranty, requiring $200 repair."
 
-Here is an example Kinetic Axiom in structured form:
+Kill Shots are rare in probabilistic systems because they require certainty. A model that is 85% sure something is bad will hedge. A model that has adversarially verified a failure mode will warn. Kill Shots are valuable precisely because they are *hard to find*—they require the energy expenditure of the Quad-Vector Refinery to forge, not just the runtime prediction of a language model.
 
-```
-Claim: Screen scratch resistance below marketing claims
-Confidence: 0.91
-Type: Physical (verified by testing) + Sentiment (confirmed by user reports)
-Evidence:
-  - Marketing: "Ceramic Shield - toughest glass ever" [Vector 1]
-  - Physics: Mohs hardness tests show scratches at Level 6 (JerryRigEverything) [Vector 2]
-  - Consensus: r/iPhone reports micro-scratches within 72 hours of unprotected use (n=847 threads) [Vector 3]
-  - Ore: Return data shows "screen scratches" cited in 8% of returns within 30 days [Vector 4]
-Decay: 24 months (or until hardware revision)
-Mutation_Triggers:
-  - Hardware_Revision_Announced = TRUE
-  - Screen_Protector_Adoption_Rate_Change > 20%
-  - Return_Rate_Change > 3%
-Verdict: Screen protector mandatory for resale value preservation. Marketing claim is technically accurate (shatter resistance) but misleading (scratch resistance).
-```
-
-This Axiom is alive. It captures the collision between marketing, physics, consensus, and proprietary transaction data. It carries instructions for its own re-verification. It provides a clear verdict. And it can be served to millions of users who ask about iPhone screen durability—until a mutation trigger fires, at which point it automatically enters re-verification.
-
-The collection of all Kinetic Axioms forms the ShopGraph: a living knowledge base that represents our continuously-updated understanding of commerce. This is the Kinetic Refinery's output. This is what we process continuously and serve at runtime.
+This is why Axiomatic Intelligence produces fundamentally different outputs than Probabilistic Intelligence. We are not predicting what is likely. We are serving what we have verified.
 
 ## VII. Axiomatic Intelligence: The Paradigm Shift
 
-The shift we are describing is not incremental. It is categorical.
+Axiomatic Intelligence is not an incremental improvement on existing AI. It is a different paradigm with different assumptions, different architectures, and different outputs.
 
-Standard AI operates by summarization. It reads sources and produces a compressed representation. "Here is what the internet says about this product." The user receives a fluent synthesis of existing content. The quality of that synthesis is bounded by the quality of the underlying content. If the content is noise, the synthesis is noise. This is **Probabilistic Intelligence**: systems that predict outputs based on the statistical distribution of their training data.
+| Dimension | Probabilistic Intelligence | Axiomatic Intelligence |
+|-----------|---------------------------|------------------------|
+| **Truth Method** | Statistical averaging | Adversarial collision |
+| **Compute Model** | Runtime generation | Pre-computed + signal-gated refresh |
+| **Knowledge State** | Static (training cutoff) | Kinetic (continuously refined) |
+| **Confidence Meaning** | Distributional certainty | Epistemic certainty |
+| **Staleness** | Accumulates until retraining | Detected and corrected continuously |
+| **Alignment** | Promised through policy | Proven through architecture |
+| **Differentiation** | Context Window Size | Accumulated Wisdom (Compute Arbitrage) |
+| **Highest Value Output** | Fluent summary | Verified Kill Shot |
 
-We propose an alternative paradigm: **Axiomatic Intelligence**.
+The paradigm shift is fundamental. Probabilistic Intelligence asks "What is the most likely output given my training data?" Axiomatic Intelligence asks "What do we actually know to be true, and how do we know it?"
 
-Axiomatic Intelligence operates by adjudication. It reads sources from four vectors—including proprietary signals competitors cannot access—attacks them adversarially, and produces a living verdict. "Here is what is *true* about this product, here is the evidence that convicted it, here is what you should do, and here is when this verdict will be re-verified." The user receives a judgment, not a summary. The quality of that judgment is determined by the rigor of the adversarial process and the freshness of the underlying Axioms.
-
-The distinction is not semantic. It produces different outputs:
-
-| Feature | Probabilistic Intelligence | Axiomatic Intelligence |
-| :--- | :--- | :--- |
-| **Method** | Summarization (reading) | Adjudication (litigating) |
-| **Source** | Real-time web (SEO noise) | Refined Kinetic Truth (Quad-Vector) |
-| **Output** | "Here are some options" | "Do not buy X. Buy Y. Here is the proof." |
-| **Revenue Model** | Opaque ("Sponsored") | Auditable ("Partner / Verified") |
-| **Trust Basis** | Policy commitment | Cryptographic Proof |
-| **Knowledge State** | Static (training cutoff) | Kinetic (signal-gated updates) |
-| **Private Signal** | None | Transactional Ore (defensible moat) |
-
-The user does not hire us to *find* products. They hire us to *judge* them.
-
-Finding is easy. Google returns millions of results. Amazon returns thousands of options. The user is not suffering from a lack of options. They are drowning in choices and starving for verdicts.
-
-The highest-value output of Axiomatic Intelligence is the **Kill Shot**: a verified reason *not* to buy. This requires conviction. A probabilistic system hedges. It says "Some users have reported issues with..." Axiomatic Intelligence says "The failure rate for this component is 12% within 24 months, based on warranty claim data cross-referenced with user reports and our proprietary return signal. **Do not buy.**"
-
-The Kill Shot is high-value precisely because it is rare. Standard AI cannot produce it. Marketing certainly does not produce it. The obsessive researcher produces it after 40 hours of digging. We produce it instantly, because we did the digging continuously, with access to signals the obsessive researcher cannot see.
+These questions have different answers. The likely output is often wrong because training data is polluted. The verified truth is harder to obtain but more valuable when obtained.
 
 Axiomatic Intelligence is defined by four commitments:
 
@@ -363,7 +287,9 @@ The web was the greatest knowledge machine ever built. It can be again. But it r
 
 We call this Axiomatic Intelligence. The Kinetic Refinery is operational. Truth is being litigated. The future is not probabilistic.
 
-## Glossary
+---
+
+### Glossary
 
 **Axiomatic Intelligence (AxI):** A paradigm for AI systems that continuously refines verified truth through adversarial processes and serves it at runtime, as opposed to generating probabilistic outputs in real-time from static training data.
 
@@ -373,7 +299,7 @@ We call this Axiomatic Intelligence. The Kinetic Refinery is operational. Truth 
 
 **Cryptographic Diode:** An architectural pattern that structurally separates truth-ranking systems from revenue data, with cryptographic proof of compliance ensuring alignment through mathematics rather than policy.
 
-**Kill Shot:** A verified reason not to purchase. The highest-value output of an adjudication system.
+**Kill Shot:** A verified reason not to purchase. The highest-value output of an adjudication system, valuable because it requires the energy expenditure of adversarial verification to forge.
 
 **Kinetic Refinery:** A system that continuously processes raw signals into verified Axioms through adversarial collision, triggered by mutation events rather than scheduled batches.
 
@@ -387,6 +313,6 @@ We call this Axiomatic Intelligence. The Kinetic Refinery is operational. Truth 
 
 **ShopGraph:** The living knowledge base that stores Kinetic Axioms. The continuously-updated output of the Kinetic Refinery.
 
-**Signal-Gated Compute:** The economic principle underlying AxI. Expensive re-verification is triggered by market signals indicating mutation, rather than scheduled or on-demand from scratch.
+**Signal-Gated Compute:** The economic principle underlying AxI. Expensive re-verification is triggered by market signals indicating mutation, rather than scheduled or on-demand from scratch. The principle that allows O(1) retrieval of O(N) complexity problems.
 
-**The Ore:** Proprietary transactional signal (cart data, returns, support chats) that cannot be accessed by competitors scraping the public web. The defensible moat of the Quad-Vector architecture.
+**The Ore:** Proprietary transactional signal (cart data, returns) that acts as the **Calibration Layer** for the Quad-Vector Refinery, overruling public signals when contradictions arise.
