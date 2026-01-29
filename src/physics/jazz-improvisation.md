@@ -242,7 +242,7 @@ The goal is not to reduce jazz to equations. The magic remains. The goal is to r
 
 For readers interested in the underlying epistemology: [Axiomatic Intelligence: A Post-Probabilistic Architecture →]
 
-## Evidence Trace
+### Evidence Trace
 
 **Axiom 1 (Neural Architecture):** Alves Da Mota 2025 on metastable co-activation; Ueno & Shimada 2024 on prediction error; Ramirez-Moreno 2023 on inter-brain synchronization.
 
