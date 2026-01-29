@@ -89,31 +89,31 @@ The Probabilistic Trap is structural. It cannot be escaped by making the models 
 
 Before describing the solution, define the destination. What would a system look like that actually solved this problem?
 
-**Epistemic Certainty, Not Probability.**
+### Epistemic Certainty, Not Probability
 
 The output should not be "Product X is probably good based on what most sources say." The output should be "Product X has a specific failure mode documented by 847 users, confirmed by our testing, and not addressed in firmware updates through version 3.2." The difference is between statistical hedging and verified knowledge.
 
 This does not mean certainty about everything. It means clarity about *what we know* versus *what we are guessing*. A system that says "We have high confidence in this claim based on adversarial verification across multiple independent sources" is fundamentally different from a system that says "This claim appeared frequently in our training data."
 
-**Adversarial Verification, Not Summarization.**
+### Adversarial Verification, Not Summarization
 
 Truth in contested domains is not found by averaging. It is found by collision. The marketing claim says the battery lasts 10 hours. The user reports say 6. The specification sheet says 8 under controlled conditions. A system that summarizes these sources will produce mush. A system that *collides* them—that identifies the contradiction and investigates it—will produce insight.
 
 The process should be adversarial by design. Every claim should face its strongest counter-claim. The output should be the residue that survives the collision, not the average of the inputs.
 
-**Continuous Refinement, Not Static Storage.**
+### Continuous Refinement, Not Static Storage
 
 Knowledge in commerce is not static. A product that was good yesterday may be bad today. A deal that was valid this morning may be expired now. A system that stores truth must also *maintain* truth. It must have mechanisms to detect when stored knowledge has decayed and trigger re-verification.
 
 This is not a batch process. It is continuous. The system must be *alive*—constantly ingesting signals, detecting mutations, and updating its knowledge base.
 
-**Cryptographic Alignment, Not Promised Neutrality.**
+### Cryptographic Alignment, Not Promised Neutrality
 
 Every recommendation system claims to be unbiased. None of them prove it. The claim is unverifiable by design. Users must trust the system's promises about its own alignment.
 
 A better architecture would make alignment *provable*. Not through policy commitments, but through structural constraints that are mathematically verifiable. If the ranking system cannot see revenue data, it cannot optimize for revenue. This is not a promise. It is a fact about the architecture.
 
-**Warnings, Not Just Recommendations.**
+### Warnings, Not Just Recommendations
 
 The highest-value output is often not "buy this" but "don't buy that." A system optimized for truth should excel at *disqualification*—identifying the specific reason why a product fails to meet the user's needs. This is the "Kill Shot": a verified fact that ends the search by eliminating options.
 
