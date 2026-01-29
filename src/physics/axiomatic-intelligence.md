@@ -59,25 +59,25 @@ Consider a simple thought experiment. You train a model on 1,000 documents about
 
 This is not a hypothetical. This is the structure of the web. Marketing content is produced at industrial scale. It is optimized for discoverability. It dominates the corpus. Authentic user experience is scattered, unoptimized, and often buried. A probabilistic model trained on this corpus will reproduce its biases with perfect fidelity.
 
-**The Hallucination of Consensus.**
+### The Hallucination of Consensus
 
 Standard AI assumes the most common answer is true. It treats frequency as a proxy for validity. But consensus is often wrong. Hype cycles inflate expectations beyond reality. Marketing campaigns manufacture artificial agreement. Social proof cascades create the illusion of widespread satisfaction where none exists.
 
 When you ask a probabilistic model "Is Product X good?", you are not asking "What is true?" You are asking "What do most documents say?" These are different questions with different answers.
 
-**The Confidence Illusion.**
+### The Confidence Illusion
 
 Probabilistic outputs come with confidence scores that measure the model's certainty about its prediction. But this confidence reflects distributional certainty, not epistemic certainty. A model can be highly confident that "Product X is excellent" because that claim appears frequently in its training data. The confidence measures how well the output matches the pattern, not how well the pattern matches reality.
 
 Users interpret confidence as truth. They should not. A confident hallucination is still a hallucination.
 
-**The Staleness Problem.**
+### The Staleness Problem
 
 Training data has a cutoff date. The world changes. Products are updated, recalled, discontinued. Prices shift. New failure modes emerge. A model trained on data from six months ago cannot know that the product it confidently recommends was recalled last week.
 
 This is not a minor inconvenience. In domains where freshness matters—and commerce is such a domain—stale knowledge is wrong knowledge. The model does not know what it does not know. It will recommend the recalled product with the same confidence it had before the recall.
 
-**The Alignment Gap.**
+### The Alignment Gap
 
 The deepest problem is alignment. A probabilistic model optimizes for prediction accuracy on its training distribution. It does not optimize for user welfare. If the training data is polluted by affiliate incentives, the model learns those incentives. If the training data rewards engagement over accuracy, the model learns to engage rather than inform.
 
@@ -127,7 +127,7 @@ The core insight of Axiomatic Intelligence is that truth in contested domains ca
 
 This is a departure from the standard AI paradigm, which treats intelligence as a runtime phenomenon. You ask a question, the model thinks, you get an answer. The thinking happens in real-time, for every query, from scratch.
 
-**The Efficiency Gap (O(N) vs O(1)).**
+### The Efficiency Gap (O(N) vs O(1))
 
 Fixing staleness at runtime is thermodynamically impossible. Consider the physics of answering: *"Is the iPhone 17 overheating?"*
 
@@ -143,7 +143,7 @@ This is Signal-Gated Compute. The principle is simple: expensive verification sh
 
 Consider the difference. A static knowledge base updates monthly, regardless of whether anything has changed. A query-triggered system updates when users ask, forcing them to wait for fresh computation. A signal-gated system updates when *the market signals that something has changed*—a price movement, a new review cluster, a firmware release, a sentiment shift.
 
-**The IQ Delta.**
+### The IQ Delta
 
 This creates what we call the "IQ Delta"—the gap between our pre-computed knowledge and what a general-purpose AI can derive in real-time. A general model might be 85% accurate on product questions by reasoning from its training data. We aim to be 99% accurate by serving pre-verified Axioms.
 
@@ -155,25 +155,25 @@ We compete on the accumulated energy of our pre-computation. The moat is the lib
 
 The Kinetic Refinery processes four distinct input vectors. Each vector provides a different type of signal. The power comes from *colliding* them—identifying contradictions and resolving them through adversarial synthesis.
 
-**Vector 1: Marketing (The Thesis).**
+### Vector 1: Marketing (The Thesis)
 
 This is what brands claim about their products. Specifications, features, benefits, pricing. Marketing is not useless—it contains structured information that is often accurate about measurable properties. But it is systematically biased toward positive framing and systematically silent about failure modes.
 
 We ingest marketing as the *thesis* to be tested, not as truth to be trusted.
 
-**Vector 2: Physics (The Measurement).**
+### Vector 2: Physics (The Measurement)
 
 This is objective, measurable reality. Weight, dimensions, benchmark scores, laboratory test results. Physics provides ground truth for claims that can be empirically verified. When marketing says "all-day battery life" and physics says "4,200 mAh," we have a testable claim.
 
 Physics is expensive to acquire at scale—it requires partnerships with testing organizations, structured data extraction, and continuous monitoring. But it provides the hardest form of truth: reality that does not depend on opinion.
 
-**Vector 3: Consensus (The Lived Experience).**
+### Vector 3: Consensus (The Lived Experience)
 
 This is what users actually report. Reviews, forum posts, support threads, social media complaints. Consensus is noisy—it contains outliers, fake reviews, and unrepresentative samples. But it also contains signal that appears nowhere else: the failure modes that only emerge after thousands of hours of real-world use.
 
 We do not average consensus. We *mine* it for patterns. A single complaint is noise. A cluster of complaints about the same failure mode is signal. We use adversarial extraction to identify these clusters and synthesize them into verified Axioms.
 
-**Vector 4: The Ore (The Calibration Signal).**
+### Vector 4: The Ore (The Calibration Signal)
 
 This is our **Calibration Signal**. We operate SimplyCodes, a platform that processes millions of commerce transactions. This gives us access to signal that does not exist on the public web: which products are actually being purchased, which coupons actually work, which merchants actually fulfill orders, which returns happen and why.
 
@@ -181,7 +181,7 @@ The Ore provides transactional truth. When consensus says a product is popular b
 
 This is the Validator. A competitor can replicate our web scraping. They can replicate our ARC protocol. But they cannot replicate the **Transactional Verification** that confirms if the "Logic" matched the "Reality." The Ore prevents us from becoming just another sophisticated hallucination engine.
 
-**The Collision Process.**
+### The Collision Process
 
 These four vectors are not simply aggregated. They are *collided*. The ARC (Adversarial Reasoning Cycle) protocol takes claims from one vector and attacks them with evidence from others:
 
@@ -221,7 +221,7 @@ Each type has different verification methods and different decay rates.
 
 This structure enables what we call "living knowledge." The Axiom is not stored and forgotten. It is continuously monitored, with decay functions degrading confidence over time and mutation triggers forcing re-verification when signals indicate change.
 
-**The Kill Shot.**
+### The Kill Shot
 
 The highest-value Axiom is the Kill Shot: a verified reason *not* to purchase. "The Acme Widget has a documented failure mode affecting 12% of units, not addressed in warranty, requiring $200 repair."
 
