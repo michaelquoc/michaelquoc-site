@@ -1,10 +1,11 @@
 ---
 title: "The Physics of Luxury"
+subtitle: "The Psychology, Economics & Game Theory"
 seo_title: "Why Luxury Goods Are So Expensive: The Physics of Scarcity, Signals & $10,000 Handbags"
 description: "Hermès produces 120,000 bags/year while Louis Vuitton sells 40 million. 39 axioms reveal why raising prices increases demand—the game theory, neuroscience, and network dynamics governing luxury markets."
 date: 2026-02-04
 updated: 2026-02-04
-layout: treatise
+layout: layouts/treatise.njk
 tags:
   - physics
   - economics
