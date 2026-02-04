@@ -1,9 +1,10 @@
 ---
-title: "Why Luxury Goods Are So Expensive: The Psychology, Economics, and Game Theory Behind $10,000 Handbags"
-description: "Hermès produces 120,000 bags/year while Louis Vuitton sells 40 million. 39 axioms forged through adversarial research reveal the physics of scarcity engineering, signal mechanics, and brand value destruction."
+title: "The Physics of Luxury"
+seo_title: "Why Luxury Goods Are So Expensive: The Physics of Scarcity, Signals & $10,000 Handbags"
+description: "Hermès produces 120,000 bags/year while Louis Vuitton sells 40 million. 39 axioms reveal why raising prices increases demand—the game theory, neuroscience, and network dynamics governing luxury markets."
 date: 2026-02-04
 updated: 2026-02-04
-layout: layouts/treatise.njk
+layout: treatise
 tags:
   - physics
   - economics
@@ -60,7 +61,11 @@ aeo_entities:
   - cultural capital
 ---
 
-# Why Luxury Goods Are So Expensive: The Psychology, Economics, and Game Theory Behind $10,000 Handbags
+# The Physics of Luxury
+
+**A first-principles deconstruction of why luxury goods are so expensive—the scarcity engineering, signal mechanics, and network dynamics that govern $10,000 handbags. 39 axioms forged through [ARC Protocol](/physics/arc-protocol/).**
+
+---
 
 Hermès produces approximately 120,000 quota bags per year. Louis Vuitton sells 40 million items in Japan alone. Yet Hermès commands 40.5% operating margins while peers struggle at 15-20%. Ferrari caps production at 13,200 vehicles annually despite demand that could support triple the volume. Rolex maintains perpetual waitlists for watches that cost a fraction of what Ferrari charges for cars.
 
@@ -68,7 +73,7 @@ This is not marketing. This is physics.
 
 Luxury operates on mechanics that invert standard economic theory. Where normal goods follow the law of demand—higher prices reduce quantity demanded—luxury goods can exhibit the opposite: raising prices increases desirability. Understanding why requires deconstructing luxury not as a product category but as a signaling technology governed by evolutionary biology, game theory, information economics, and network dynamics.
 
-What follows is not opinion. It is 39 axioms forged through the ARC Protocol—adversarial research across six vectors, pressure-tested until only defensible claims survive. The mechanisms are cold, precise, and inescapable.
+What follows is not opinion. It is 39 axioms forged through adversarial research across six vectors, pressure-tested until only defensible claims survive. The mechanisms are cold, precise, and inescapable.
 
 ## How Luxury Brands Exploit Human Psychology: The Science of Costly Signals
 
@@ -380,7 +385,7 @@ Per **Axioms 3.4** and **5.1-5.6**: documented heritage (continuous operation th
 
 ## Methodology Note: The ARC Protocol
 
-This analysis was forged through the **ARC Protocol** (Adversarial Reasoning Cycle)—Product.ai's proprietary methodology for extracting verified knowledge from AI systems.
+This analysis was forged through the **[ARC Protocol](/physics/arc-protocol/)** (Adversarial Reasoning Cycle)—Product.ai's proprietary methodology for extracting verified knowledge from AI systems.
 
 **The Problem ARC Solves:** Standard AI retrieves popular consensus. It summarizes what's commonly said, frequently repeated, and optimized for visibility. This produces fluent marketing copy, not defensible truth.
 
@@ -399,7 +404,7 @@ Each vector ran through adversarial pressure testing. Claims that collapsed unde
 
 The axioms presented here are not opinions. They are not summaries of what "people say" about luxury. They are claims that have been attacked from every direction and remained standing.
 
-For more on axiomatic intelligence and the ARC methodology: [The Physics of Axiomatic Intelligence](/physics/axiomatic-intelligence/)
+**Learn more:** [The ARC Protocol: How We Forge Verified Knowledge](/physics/arc-protocol/)
 
 ## Evidence Trace
 
@@ -414,4 +419,4 @@ For more on axiomatic intelligence and the ARC methodology: [The Physics of Axio
 
 ---
 
-*Forged through ARC Protocol | 6 Research Vectors | 39 Axioms | February 2026*
+*The Physics of Luxury | Forged through [ARC Protocol](/physics/arc-protocol/) | 6 Research Vectors | 39 Axioms | February 2026*
