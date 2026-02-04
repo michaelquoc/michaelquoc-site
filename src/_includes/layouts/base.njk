@@ -3,7 +3,7 @@
 <head>
     {# --- SEO LOGIC ENGINE --- #}
     {% set seoEntry = seo_ledger[page.fileSlug] %}
-    {% set finalTitle = seoEntry.title or title or "Michael Quoc" %}
+    {% set finalTitle = seo_title or seoEntry.title or title or "Michael Quoc" %}
     {% set finalDesc = seoEntry.description or description or "System Architect" %}
     
     <meta charset="UTF-8">
