@@ -91,7 +91,7 @@ The first research vector attacked the strategic foundations of negotiation. 5 a
 
 ### Why do negotiations get stuck even when both sides want a deal?
 
-**Axiom 1.1**, Nash Equilibrium as the State of Stasis, establishes that impasse is not communication failure—it's the successful reach of a Nash Equilibrium where the cost of concession exceeds the perceived benefit of movement. Formally: uᵢ(sᵢ*, s₋ᵢ*) ≥ uᵢ(sᵢ, s₋ᵢ*) for all alternative strategies.
+**Axiom 1.1 - Nash Equilibrium as the State of Stasis.** Establishes that impasse is not communication failure—it's the successful reach of a Nash Equilibrium where the cost of concession exceeds the perceived benefit of movement. Formally: uᵢ(sᵢ*, s₋ᵢ*) ≥ uᵢ(sᵢ, s₋ᵢ*) for all alternative strategies.
 
 The intuition: at equilibrium, neither party can improve their position by unilaterally changing strategy. To break a stalemate, you must change the underlying payoff structure—not the "mood" or rapport. The equilibrium is mathematically stable until parameters shift.
 
@@ -99,7 +99,7 @@ John Nash's foundational work demonstrated that every finite game has at least o
 
 ### How much is a better backup plan actually worth?
 
-**Axiom 1.2**, BATNA as the Disagreement Point Multiplier, quantifies the mathematical power of alternatives. BATNA enters the Nash bargaining solution multiplicatively via the Nash product: f(F,d) = argmax[(x₁ - d₁)(x₂ - d₂)]. The marginal calculus: ∂x₁*/∂d₁ = 0.5.
+**Axiom 1.2 - BATNA as the Disagreement Point Multiplier.** Quantifies the mathematical power of alternatives. BATNA enters the Nash bargaining solution multiplicatively via the Nash product: f(F,d) = argmax[(x₁ - d₁)(x₂ - d₂)]. The marginal calculus: ∂x₁*/∂d₁ = 0.5.
 
 Translation: every dollar improvement in your BATNA yields exactly 50 cents in improved negotiated outcome. This isn't approximation—it's mathematical certainty under Nash's axioms of efficiency, symmetry, independence, and scale invariance.
 
@@ -107,7 +107,7 @@ BATNA is the mathematical cornerstone of bargaining power. Without viable altern
 
 ### Is negotiation always zero-sum?
 
-**Axiom 1.3**, Zero-Sum vs. Positive-Sum as Structural Geometry, reveals the mathematical condition separating distributive from integrative bargaining. In constant-sum games, the Pareto frontier is a straight line with slope -1. In variable-sum games, the frontier is a convex curve.
+**Axiom 1.3 - Zero-Sum vs. Positive-Sum as Structural Geometry.** Reveals the mathematical condition separating distributive from integrative bargaining. In constant-sum games, the Pareto frontier is a straight line with slope -1. In variable-sum games, the frontier is a convex curve.
 
 The mathematical condition for logrolling (trading issues for mutual gain): heterogeneous preference intensity across issues. When you care about issue A more than issue B, and your counterpart has opposite preferences, trade creates value that didn't exist when you negotiated issues separately.
 
@@ -115,7 +115,7 @@ Counterintuitive finding from **Axiom 1.3**: excessive bargaining power can harm
 
 ### Why do some threats work while others fail?
 
-**Axiom 1.4**, Credible Commitment Through Cost Imposition, formalizes the physics of threat credibility. Crawford-Sobel modeling shows that cheap talk has fundamental limits. With bias parameter b: if b = 0, fully revealing equilibrium exists; if b ≠ 0, maximum precision N* satisfies N*(N*-1) ≤ 1/(2b).
+**Axiom 1.4 - Credible Commitment Through Cost Imposition.** Formalizes the physics of threat credibility. Crawford-Sobel modeling shows that cheap talk has fundamental limits. With bias parameter b: if b = 0, fully revealing equilibrium exists; if b ≠ 0, maximum precision N* satisfies N*(N*-1) ≤ 1/(2b).
 
 The power of a threat equals the probability the opponent believes you will execute it. Commitments bind through three mechanisms: option elimination, cost modification, or strategic delegation. Thomas Schelling's insight holds: the ability to constrain your own future behavior creates bargaining power precisely because it makes threats credible.
 
@@ -123,7 +123,7 @@ Burning bridges works because it eliminates retreat as an option. Hiring aggress
 
 ### Does cooperation ever make strategic sense?
 
-**Axiom 1.5**, The Folk Theorem and the Shadow of the Future, establishes the conditions for sustainable cooperation. The critical discount factor for cooperation: δ ≥ (v̄ᵢ - vᵢ)/(v̄ᵢ - v̲ᵢ). For N-firm collusion: δ ≥ (N-1)/N.
+**Axiom 1.5 - The Folk Theorem and the Shadow of the Future.** Establishes the conditions for sustainable cooperation. The critical discount factor for cooperation: δ ≥ (v̄ᵢ - vᵢ)/(v̄ᵢ - v̲ᵢ). For N-firm collusion: δ ≥ (N-1)/N.
 
 In finitely repeated games with known horizon, backward induction unravels cooperation completely—the last round has no future, so defection dominates, which makes the second-to-last round effectively last, cascading backward to round one.
 
@@ -137,7 +137,7 @@ The second research vector dissected the anatomy of negotiation power. 7 axioms 
 
 ### Can you fake leverage with confident body language?
 
-**Axiom 2.1**, Leverage as Functional Capacity, defines leverage precisely: the functional ability to influence counterparty decisions by altering their perceived cost-benefit ratio of agreement vs. non-agreement.
+**Axiom 2.1 - Leverage as Functional Capacity.** Defines leverage precisely: the functional ability to influence counterparty decisions by altering their perceived cost-benefit ratio of agreement vs. non-agreement.
 
 The Nash Bargaining Solution demonstrates this mechanically—improving your BATNA shifts the entire solution space in your favor through mathematics, not psychology. You cannot "fake" structural leverage through confident body language or power poses. The focus must be on improving actual disagreement points.
 
@@ -145,13 +145,13 @@ This is why negotiation advice focusing exclusively on communication tactics oft
 
 ### What are the four layers of negotiation power?
 
-**Axiom 2.2**, The Four-Component Power Model, reveals power as operating through distinct layers: (1) **Potential Power**—objective capacity from structural dependencies; (2) **Perceived Power**—subjective assessment by both parties; (3) **Power Tactics**—specific deployment behaviors; (4) **Realized Power**—final benefit distribution.
+**Axiom 2.2 - The Four-Component Power Model.** Reveals power as operating through distinct layers: (1) **Potential Power**—objective capacity from structural dependencies; (2) **Perceived Power**—subjective assessment by both parties; (3) **Power Tactics**—specific deployment behaviors; (4) **Realized Power**—final benefit distribution.
 
 Critical finding: perceived power—not potential power—drives tactical decisions in real-time. This creates opportunities: strategically influencing perception can shift behavior even when underlying structure remains unchanged. But it also creates risks: overestimating your perceived power leads to aggressive tactics that trigger retaliation.
 
 ### What are the five sources of negotiation power?
 
-**Axiom 2.3**, Five Atomic Dimensions of Potential Power, maps the fundamental power bases: **Reward Power** (controls benefits), **Coercive Power** (imposes costs), **Legitimate Power** (institutional authority), **Expert Power** (information asymmetry), **Referent Power** (relationship-based influence).
+**Axiom 2.3 - Five Atomic Dimensions of Potential Power.** Maps the fundamental power bases: **Reward Power** (controls benefits), **Coercive Power** (imposes costs), **Legitimate Power** (institutional authority), **Expert Power** (information asymmetry), **Referent Power** (relationship-based influence).
 
 These dimensions act as force multipliers in the negotiation physics equation. A negotiator weak in BATNA may still possess significant leverage through expert power (you have information they need) or legitimate power (institutional norms favor your position).
 
@@ -159,7 +159,7 @@ The tactical implication: assess power across all five dimensions before conclud
 
 ### How does information asymmetry create extractable value?
 
-**Axiom 2.4**, Information Asymmetry as Kinetic Engine, establishes information as a direct source of surplus. Information asymmetry generates "information rents"—surplus captured by the informed party due to counterparty's verification inability.
+**Axiom 2.4 - Information Asymmetry as Kinetic Engine.** Establishes information as a direct source of surplus. Information asymmetry generates "information rents"—surplus captured by the informed party due to counterparty's verification inability.
 
 Per Perfect Bayesian Equilibrium, the informed party should quote first; the uninformed party updates beliefs via Bayesian inference from that quote. Information asymmetry creates extractable value that wouldn't exist under symmetric information.
 
@@ -167,19 +167,19 @@ Strategic implication: position yourself on the informed side through research, 
 
 ### Can refusing information actually increase your power?
 
-**Axiom 2.5**, Strategic Ignorance as Manufactured Leverage, reveals a counterintuitive dynamic. Deliberately refusing information can create credible commitment. In oligopoly pricing studies, firms that lost access to rival price data were unable to react to competitor moves—this inability functioned as commitment to maintain higher margins.
+**Axiom 2.5 - Strategic Ignorance as Manufactured Leverage.** Reveals a counterintuitive dynamic. Deliberately refusing information can create credible commitment. In oligopoly pricing studies, firms that lost access to rival price data were unable to react to competitor moves—this inability functioned as commitment to maintain higher margins.
 
 Leverage can be manufactured by strategically refusing information, not just by acquiring it. Sometimes knowing too much constrains your options. A negotiator who genuinely doesn't know their organization's bottom line can credibly commit to positions that someone with full information could not.
 
 ### What are the four paradoxes of power?
 
-**Axiom 2.6**, The Power Paradox, identifies four counterintuitive dynamics: (1) power is based on giving—your power over others derives from what you can provide, not just threaten; (2) to use power is to lose it—deploying leverage depletes it; (3) tactical manipulation may have integrative effects—certain "hardball" tactics can paradoxically improve joint outcomes; (4) inferior positions may have tactical advantages—weakness can create commitment credibility.
+**Axiom 2.6 - The Power Paradox.** Identifies four counterintuitive dynamics: (1) power is based on giving—your power over others derives from what you can provide, not just threaten; (2) to use power is to lose it—deploying leverage depletes it; (3) tactical manipulation may have integrative effects—certain "hardball" tactics can paradoxically improve joint outcomes; (4) inferior positions may have tactical advantages—weakness can create commitment credibility.
 
 Backfire mechanisms include: overconfidence blindness (powerful parties stop learning), relationship destruction (victory today means no deal tomorrow), counter-mobilization (opposition organizes against perceived threats), trade war stalemate (mutual retaliation escalates costs), and the "preventism" paradox (threats designed to prevent action may provoke it).
 
 ### Does leverage simply decay over time?
 
-**Axiom 2.7**, Temporal Transformation Not Simple Decay, challenges the assumption that time erodes leverage linearly. Time transforms bargaining through non-monotonic dynamics—it doesn't just decay power smoothly.
+**Axiom 2.7 - Temporal Transformation Not Simple Decay.** Challenges the assumption that time erodes leverage linearly. Time transforms bargaining through non-monotonic dynamics—it doesn't just decay power smoothly.
 
 Research reveals that small deadline uncertainty paradoxically *increases* impasse rates from 18% to 26% before declining with larger uncertainty. Deadlines versus time costs function differently: shared, credible deadlines improve outcomes while asymmetric time costs benefit the patient party.
 
@@ -193,7 +193,7 @@ The third research vector examined cognitive biases as mechanical forces in nego
 
 ### Why does the first number mentioned dominate final outcomes?
 
-**Axiom 3.1**, Anchoring as Selective Accessibility Engine, explains the mechanism behind anchoring power. Anchoring operates through the Selective Accessibility Model—when you encounter a number, your brain initiates a confirmation-biased memory search, retrieving anchor-consistent information while suppressing contradictory data.
+**Axiom 3.1 - Anchoring as Selective Accessibility Engine.** Explains the mechanism behind anchoring power. Anchoring operates through the Selective Accessibility Model—when you encounter a number, your brain initiates a confirmation-biased memory search, retrieving anchor-consistent information while suppressing contradictory data.
 
 First offers yield g=0.42 advantage with r=0.62 correlation to final settlement. The effect persists undiminished after one week. Time provides NO protection against anchoring.
 
@@ -201,7 +201,7 @@ The extremity threshold: anchors follow diminishing returns, and a "boomerang th
 
 ### Is loss aversion really 2x as powerful as gains?
 
-**Axiom 3.2**, Loss Aversion is Context-Dependent, updates the canonical 2:1 ratio from Prospect Theory. Meta-analysis shows λ=1.955 [1.820, 2.102], but with asymmetric design controls: λ≈1.07. No loss aversion appears for losses up to $20; moderate loss aversion (λ=1.54) emerges only for losses exceeding $100.
+**Axiom 3.2 - Loss Aversion is Context-Dependent.** Updates the canonical 2:1 ratio from Prospect Theory. Meta-analysis shows λ=1.955 [1.820, 2.102], but with asymmetric design controls: λ≈1.07. No loss aversion appears for losses up to $20; moderate loss aversion (λ=1.54) emerges only for losses exceeding $100.
 
 Critical asymmetry: loss framing increases compliance but undermines anchoring. Framing offers as losses (what they'll miss) eliminates or reverses anchoring effects. The tactics are partially incompatible.
 
@@ -209,7 +209,7 @@ The updated physics: loss aversion is real but context-dependent. Small stakes d
 
 ### How quickly does psychological ownership form?
 
-**Axiom 3.3**, The Endowment Effect Forms in Seconds, reveals the speed of ownership psychology. Three mechanisms drive it: Self-Object Association (items become part of identity), Query Theory (ownership biases the questions we ask ourselves), and Gaze Feedback Loop (looking at owned items reinforces attachment).
+**Axiom 3.3 - The Endowment Effect Forms in Seconds.** Reveals the speed of ownership psychology. Three mechanisms drive it: Self-Object Association (items become part of identity), Query Theory (ownership biases the questions we ask ourselves), and Gaze Feedback Loop (looking at owned items reinforces attachment).
 
 Formation timeline: 10 seconds = $2.24 premium; 30 seconds = $3.07; 1 minute = $3.95; 1 hour = $4.97. The effect strengthens logarithmically—rapid early growth, then diminishing returns.
 
@@ -217,7 +217,7 @@ Critical finding: physical possession trumps legal ownership. Giving buyers poss
 
 ### Why do people automatically devalue proposals from adversaries?
 
-**Axiom 3.4**, Reactive Devaluation as Genetic Distrust Circuit, explains why the source of a proposal matters more than its content. The brain evaluates intent of offerer, not content of offer.
+**Axiom 3.4 - Reactive Devaluation as Genetic Distrust Circuit.** Explains why the source of a proposal matters more than its content. The brain evaluates intent of offerer, not content of offer.
 
 Same proposal attributed to ally: 90% rated favorable. Same proposal attributed to adversary: 44% rated favorable. A 46-point swing from source attribution alone.
 
@@ -225,7 +225,7 @@ Neutralization technique: self-affirmation before negotiation reduces reactive d
 
 ### Why do people assume every negotiation is winner-take-all?
 
-**Axiom 3.5**, Fixed-Pie Bias as Evolutionary Default, traces the origin of zero-sum thinking. The zero-sum heuristic was fitness-enhancing in prehistoric environments where resources were genuinely scarce. But it creates systematic errors in positive-sum contexts.
+**Axiom 3.5 - Fixed-Pie Bias as Evolutionary Default.** Traces the origin of zero-sum thinking. The zero-sum heuristic was fitness-enhancing in prehistoric environments where resources were genuinely scarce. But it creates systematic errors in positive-sum contexts.
 
 Participants in studies expected zero-sum distribution even when explicitly told resources were unlimited. The assumption of fixed pies prevents exploration of value-creating trades.
 
@@ -235,7 +235,7 @@ Breaking mechanism: active listening combined with multi-issue offers. Neither t
 
 ### How much does overconfidence increase negotiation failure rates?
 
-**Axiom 3.6**, Overconfidence Creates Nonlinear Impasse Risk, quantifies the danger of believing you're stronger than you are. Overplacement—believing you're relatively stronger than the other party—is most critical because it leads to incompatible demands.
+**Axiom 3.6 - Overconfidence Creates Nonlinear Impasse Risk.** Quantifies the danger of believing you're stronger than you are. Overplacement—believing you're relatively stronger than the other party—is most critical because it leads to incompatible demands.
 
 Failure rate triples with overconfidence: 15% vs. 4% baseline. But the relationship is nonlinear with stakes: 28% failure rate at low surplus (small pie makes errors catastrophic), 0% failure rate at high surplus (large pie provides buffer for miscalibration).
 
@@ -249,7 +249,7 @@ The fourth research vector analyzed negotiation as information warfare. 7 axioms
 
 ### What makes a signal credible rather than cheap talk?
 
-**Axiom 4.1**, The Cost Differential Principle, formalizes signal credibility. Signals achieve credibility through differential marginal costs across types. The Spence-Mirrlees single-crossing condition: ∂²U/∂s∂θ > 0. The signal must cost more for the type who doesn't possess the underlying quality.
+**Axiom 4.1 - The Cost Differential Principle.** Formalizes signal credibility. Signals achieve credibility through differential marginal costs across types. The Spence-Mirrlees single-crossing condition: ∂²U/∂s∂θ > 0. The signal must cost more for the type who doesn't possess the underlying quality.
 
 The mechanism requires three components: cost asymmetry creation (the signal is expensive for bluffers), separation threshold (a level only truth-tellers will reach), and equilibrium enforcement (recipients update beliefs correctly).
 
@@ -257,7 +257,7 @@ The mechanism requires three components: cost asymmetry creation (the signal is 
 
 ### When should you be deliberately ambiguous?
 
-**Axiom 4.2**, Strategic Ambiguity—Fundamental vs. Strategic, distinguishes two types of uncertainty. Fundamental ambiguity (uncertainty about the world state) leads to different equilibrium dynamics than strategic ambiguity (uncertainty about what you'll do).
+**Axiom 4.2 - Strategic Ambiguity—Fundamental vs. Strategic.** Distinguishes two types of uncertainty. Fundamental ambiguity (uncertainty about the world state) leads to different equilibrium dynamics than strategic ambiguity (uncertainty about what you'll do).
 
 Design implication: to prevent negotiation breakdowns, reduce fundamental ambiguity—clarify facts, share verifiable information. To weaponize opponent passivity, introduce fundamental ambiguity—create uncertainty about external conditions they can't verify.
 
@@ -265,7 +265,7 @@ Strategic ambiguity about your own actions can be valuable when you want to pres
 
 ### What's the mathematically optimal bluffing frequency?
 
-**Axiom 4.3**, The Indifference Principle for Optimal Bluffing, derives from poker theory applied to negotiation. In zero-sum games, optimal bluff frequency: F_optimal = X/(2X + Y) where X = bet size, Y = pot. For pot-sized bets: 33.3% bluff frequency creates unexploitability.
+**Axiom 4.3 - The Indifference Principle for Optimal Bluffing.** Derives from poker theory applied to negotiation. In zero-sum games, optimal bluff frequency: F_optimal = X/(2X + Y) where X = bet size, Y = pot. For pot-sized bets: 33.3% bluff frequency creates unexploitability.
 
 At this frequency, your opponent cannot profitably call or fold—they're indifferent because your bluffs and value-claims are balanced to make either response break even.
 
@@ -273,7 +273,7 @@ ICM Distortion: in survival-critical negotiations where failure means catastroph
 
 ### Is it better to lie or stay silent?
 
-**Axiom 4.4**, Silence Dominates Lying, provides clear guidance. Lying carries higher costs across three dimensions: psychological (cognitive load, guilt), social (reputation damage if caught), and cognitive (must maintain consistency).
+**Axiom 4.4 - Silence Dominates Lying.** Provides clear guidance. Lying carries higher costs across three dimensions: psychological (cognitive load, guilt), social (reputation damage if caught), and cognitive (must maintain consistency).
 
 Silence pools sender with "uninformed types"—the receiver is unsure whether you're hiding information or genuinely don't know. This ambiguity is strategically valuable. Silence also preserves optionality (you can reveal later) and trustworthiness (never caught in a lie).
 
@@ -281,7 +281,7 @@ In adversarial negotiations, prefer omission over commission. Silence is the equ
 
 ### When does silence become confession?
 
-**Axiom 4.5**, The Unraveling Default, identifies when concealment backfires. Under conditions of verifiable, costless information where receivers know it exists, unraveling occurs. The highest-quality type discloses to avoid pooling with lower types. The cascade continues until only the worst type remains silent.
+**Axiom 4.5 - The Unraveling Default.** Identifies when concealment backfires. Under conditions of verifiable, costless information where receivers know it exists, unraveling occurs. The highest-quality type discloses to avoid pooling with lower types. The cascade continues until only the worst type remains silent.
 
 Once unraveling begins, silence IS full confession. If the market expects quality sellers to disclose certifications, absence of disclosure signals low quality regardless of actual quality.
 
@@ -289,7 +289,7 @@ Strategic implication: assess whether unraveling conditions exist. If your count
 
 ### Should you reveal good information early or late?
 
-**Axiom 4.6**, Dynamic Disclosure Timing, reveals counterintuitive temporal effects. Later disclosure is interpreted more favorably than earlier disclosure of the same information.
+**Axiom 4.6 - Dynamic Disclosure Timing.** Reveals counterintuitive temporal effects. Later disclosure is interpreted more favorably than earlier disclosure of the same information.
 
 The inference: early disclosure creates suspicion. "Why are they rushing to tell me this? What unfavorable information are they hiding?" Holding favorable information rather than rushing to disclose signals confidence and prevents this negative inference.
 
@@ -297,7 +297,7 @@ Tactical implication: resist the urge to immediately share good news. Save posit
 
 ### How long do reputations last under imperfect monitoring?
 
-**Axiom 4.7**, Temporary Reputations Under Imperfect Monitoring, establishes the limits of reputation effects. Under imperfect monitoring (when others can't perfectly observe your behavior), posterior belief that a player is "normal type" approaches 1 almost surely over time.
+**Axiom 4.7 - Temporary Reputations Under Imperfect Monitoring.** Establishes the limits of reputation effects. Under imperfect monitoring (when others can't perfectly observe your behavior), posterior belief that a player is "normal type" approaches 1 almost surely over time.
 
 Reputations are temporary regardless of actual type. Bluffing capital is exhaustible. Repeat interactions favor honesty because detection probability compounds. A reputation built on strategic behavior erodes as more data accumulates.
 
@@ -311,7 +311,7 @@ The fifth research vector examined emotions not as noise but as mechanical force
 
 ### Does anger work as a negotiation tactic?
 
-**Axiom 5.1**, Anger as Conditional Weapon, establishes precise conditions for anger's effectiveness. The EASI model identifies dual pathways: inferential channel (strategic information extraction—"they must have limits if they're this upset") and affective channel (emotional contagion—the recipient catches the feeling).
+**Axiom 5.1 - Anger as Conditional Weapon.** Establishes precise conditions for anger's effectiveness. The EASI model identifies dual pathways: inferential channel (strategic information extraction—"they must have limits if they're this upset") and affective channel (emotional contagion—the recipient catches the feeling).
 
 Authentic anger yields 140.23 point concessions versus 92.50 for inauthentic—a 51% differential. Faking anger is less than half as effective as genuine anger.
 
@@ -321,7 +321,7 @@ Hidden cost: covert retaliation during implementation. The party who conceded un
 
 ### How does fear distort negotiation judgment?
 
-**Axiom 5.2**, Fear Amplifies Loss Aversion 6:1 (The Dread Coefficient), updates Prospect Theory for high-stakes scenarios. The emotional impact of anticipating loss is 6x stronger than the pleasure from anticipating equivalent gain.
+**Axiom 5.2 - Fear Amplifies Loss Aversion 6:1 (The Dread Coefficient).** Updates Prospect Theory for high-stakes scenarios. The emotional impact of anticipating loss is 6x stronger than the pleasure from anticipating equivalent gain.
 
 Fear operates through the Behavioral Inhibition System. Cognitive conflict activates threat sensitivity, which suppresses risk-taking. Fearful negotiators become excessively cautious, accepting worse terms to avoid uncertain but potentially superior outcomes.
 
@@ -329,7 +329,7 @@ Probability distortion under fear: negotiators perceive 10% risk as 40-50% risk.
 
 ### How much do trust differences actually cost?
 
-**Axiom 5.3**, Trust as Friction Coefficient, quantifies trust's economic impact. Research shows least-trusted firms spent 5x more on contracting costs—legal fees, monitoring, enforcement mechanisms.
+**Axiom 5.3 - Trust as Friction Coefficient.** Quantifies trust's economic impact. Research shows least-trusted firms spent 5x more on contracting costs—legal fees, monitoring, enforcement mechanisms.
 
 Three minutes of small talk shifts equilibrium from defection to cooperation in Hold Up games where parties have opportunities to exploit each other. The relationship-building wasn't just pleasant—it mechanically changed the game outcome.
 
@@ -337,7 +337,7 @@ Trust destruction asymmetry: trust damaged by deception never fully recovers. Tr
 
 ### Which direction does emotional contagion flow?
 
-**Axiom 5.4**, Emotional Contagion Flows Through Power Hierarchies, establishes the physics of emotional spread. Emotions transfer via automatic mimicry at millisecond timescales—facial micro-expressions, vocal patterns, and posture synchronization occur below conscious awareness.
+**Axiom 5.4 - Emotional Contagion Flows Through Power Hierarchies.** Establishes the physics of emotional spread. Emotions transfer via automatic mimicry at millisecond timescales—facial micro-expressions, vocal patterns, and posture synchronization occur below conscious awareness.
 
 Direction is determined by power/status: high-status parties are emotional senders, low-status parties are emotional receivers. The boss's mood infects the team; the team's mood rarely shifts the boss.
 
@@ -345,7 +345,7 @@ Online asymmetry: joy and anger transmit via video conferencing. Sadness transmi
 
 ### How long does it take to recover from emotional hijacking?
 
-**Axiom 5.5**, The 20-Minute Cortisol Horizon, establishes biological constraints on rationality. Physiological recovery from acute stress (anger/fear spike) takes approximately 20 minutes. During this period, the prefrontal cortex is impaired.
+**Axiom 5.5 - The 20-Minute Cortisol Horizon.** Establishes biological constraints on rationality. Physiological recovery from acute stress (anger/fear spike) takes approximately 20 minutes. During this period, the prefrontal cortex is impaired.
 
 The negotiator experiencing emotional flooding is biologically incapable of complex integrative problem-solving. The brain has redirected resources to threat response, literally reducing capacity for creative option generation.
 
@@ -353,7 +353,7 @@ The negotiator experiencing emotional flooding is biologically incapable of comp
 
 ### Can strategic emotional displays be detected?
 
-**Axiom 5.6**, Strategic Display at 54% Detection, quantifies deception detection accuracy. Baseline accuracy for detecting strategic versus genuine emotional expression: 54%—barely better than chance.
+**Axiom 5.6 - Strategic Display at 54% Detection.** Quantifies deception detection accuracy. Baseline accuracy for detecting strategic versus genuine emotional expression: 54%—barely better than chance.
 
 Most strategic displays succeed in fooling counterparts. However, detected deception produces permanent trust damage (per **Axiom 5.3**). The risk-reward asymmetry heavily penalizes detection. Strategic display is high-variance: if the bluff is called, trust currency is lost permanently.
 
@@ -361,7 +361,7 @@ Expected value calculation: (0.46 × value_of_detected_deception) + (0.54 × val
 
 ### Is emotional expression noise or signal?
 
-**Axiom 5.7**, EvoEmo Validation—Emotion as Optimizing Function, resolves the debate. AI agents trained with evolutionary emotional policies achieved 34.6% improvement in negotiation efficiency and higher value capture than emotionally neutral agents.
+**Axiom 5.7 - EvoEmo Validation—Emotion as Optimizing Function.** Resolves the debate. AI agents trained with evolutionary emotional policies achieved 34.6% improvement in negotiation efficiency and higher value capture than emotionally neutral agents.
 
 Optimal emotional temperature: 0.4-0.6 on a 0-1 scale. Neither flat affect nor extreme emotional expression maximizes outcomes.
 
@@ -375,7 +375,7 @@ The sixth research vector examined structural parameters that constrain all tact
 
 ### Why do 80% of concessions occur in the final 20% of time?
 
-**Axiom 6.1**, The Chronos Axiom—Temporal Compression Physics, explains the universal pattern of deadline-driven concession. Approximately 80% of concessions occur in the final 20% of available time, following power law rather than linear distribution.
+**Axiom 6.1 - The Chronos Axiom—Temporal Compression Physics.** Explains the universal pattern of deadline-driven concession. Approximately 80% of concessions occur in the final 20% of available time, following power law rather than linear distribution.
 
 The Rubinstein equilibrium formalizes the temporal physics: v = (1-δ₂)/(1-δ₁δ₂). The party less constrained by deadline captures value through mathematical certainty.
 
@@ -383,7 +383,7 @@ Non-Monotonicity Discovery: small deadline uncertainty increases impasse rates t
 
 ### How many issues should you negotiate simultaneously?
 
-**Axiom 6.2**, The Dimensionality Axiom—Orthogonal Value Creation, establishes the mathematics of issue complexity. Single-issue negotiations are mechanically zero-sum—there's only one dimension along which to distribute value.
+**Axiom 6.2 - The Dimensionality Axiom—Orthogonal Value Creation.** Establishes the mathematics of issue complexity. Single-issue negotiations are mechanically zero-sum—there's only one dimension along which to distribute value.
 
 Multi-issue negotiations expand the Pareto frontier when parties have different marginal utility ratios: MU₁(A)/MU₂(A) ≠ MU₁(B)/MU₂(B). Different caring creates trading opportunities.
 
@@ -391,7 +391,7 @@ Complexity threshold: optimal at approximately 3 issues. Beyond 4 issues, outcom
 
 ### Why do coalitions fall apart?
 
-**Axiom 6.3**, The Topological Axiom—Coalition Instability, explains why multi-party negotiations are unstable. Riker's Size Principle: coalitions form just large enough to win and no larger because including additional members dilutes per-member payoff.
+**Axiom 6.3 - The Topological Axiom—Coalition Instability.** Explains why multi-party negotiations are unstable. Riker's Size Principle: coalitions form just large enough to win and no larger because including additional members dilutes per-member payoff.
 
 As the number of parties N increases, the "core" (set of stable allocations) shrinks, often becoming empty. With no stable allocation, cyclical instability emerges—any coalition can be upset by defection to form a new winning coalition.
 
@@ -399,7 +399,7 @@ Divide-and-Conquer Mechanism: discriminatory bribes (offering different incentiv
 
 ### When do public commitments increase negotiation power?
 
-**Axiom 6.4**, The Transparency Axiom—Audience Cost Physics, quantifies the value of public positioning. Public positions create credible commitment through voluntary sacrifice of flexibility—backing down becomes politically costly.
+**Axiom 6.4 - The Transparency Axiom—Audience Cost Physics.** Quantifies the value of public positioning. Public positions create credible commitment through voluntary sacrifice of flexibility—backing down becomes politically costly.
 
 Research shows public threats are approximately 1% more effective than private threats. Effect increases with hawkish audiences (+1.6%) or unpopular leaders (+2.0%).
 
@@ -407,7 +407,7 @@ The 2024 Discovery: ambiguous threats generate no significant audience costs if 
 
 ### Do agents really negotiate in your best interest?
 
-**Axiom 6.5**, The Agency Axiom—Control-Slack Paradox, reveals systematic agent-principal misalignment. Agency slack emerges from interest divergence and information asymmetry.
+**Axiom 6.5 - The Agency Axiom—Control-Slack Paradox.** Reveals systematic agent-principal misalignment. Agency slack emerges from interest divergence and information asymmetry.
 
 Concrete finding: real estate agents sold their own homes for approximately 3.7% more than clients' homes, holding other factors constant. They invested more time and rejected early offers because their incentives were aligned for their own properties.
 
@@ -415,7 +415,7 @@ Non-linear finding: high control on "entrepreneurial agents" (those seeking auto
 
 ### How does reputation compound across negotiations?
 
-**Axiom 6.6**, The Recursive Axiom—Folk Theorem Mechanics, establishes long-run dynamics. The Folk Theorem states: if δ→1 (parties weight the future heavily), virtually any feasible and individually rational payoff can be sustained as equilibrium.
+**Axiom 6.6 - The Recursive Axiom—Folk Theorem Mechanics.** Establishes long-run dynamics. The Folk Theorem states: if δ→1 (parties weight the future heavily), virtually any feasible and individually rational payoff can be sustained as equilibrium.
 
 Reputation becomes tangible asset. Defection destroys reputational capital. The discount rate δ determines whether short-term exploitation or long-term cooperation dominates.
 
@@ -423,7 +423,7 @@ Algorithmic implication: AI learning agents produce Folk Theorem-like results—
 
 ### Do negotiation principles work the same across cultures?
 
-**Axiom 6.7**, The Cultural Axiom—Parameter Variation, distinguishes universal mechanics from culturally variable parameters. Underlying negotiation physics appears universal; the parameters within those physics are culturally variable.
+**Axiom 6.7 - The Cultural Axiom—Parameter Variation.** Distinguishes universal mechanics from culturally variable parameters. Underlying negotiation physics appears universal; the parameters within those physics are culturally variable.
 
 Tight cultures (Japan, Germany): S&O (substantive-offers) strategy dominant—get to business quickly, signal through explicit offers. Loose cultures (USA, Brazil): Q&A (question-asking) strategy prevalent—build relationship first, discover interests through conversation.
 
@@ -437,7 +437,7 @@ The seventh research vector examined the fundamental tension in negotiation: mak
 
 ### Is negotiation more like Prisoner's Dilemma or Chicken?
 
-**Axiom 7.1**, The Negotiator's Dilemma Structure, maps the strategic architecture. The situation is isomorphic to Prisoner's Dilemma when mutual claiming yields mediocre but survivable outcomes—claiming dominates as a strategy regardless of what the other party does.
+**Axiom 7.1 - The Negotiator's Dilemma Structure.** Maps the strategic architecture. The situation is isomorphic to Prisoner's Dilemma when mutual claiming yields mediocre but survivable outcomes—claiming dominates as a strategy regardless of what the other party does.
 
 But it transforms to Chicken (or Coordination Game) when mutual claiming is catastrophic—no dominant strategy exists because mutual defection destroys both parties.
 
@@ -445,7 +445,7 @@ The equilibrium depends on the cost of mutual defection. To shift from competiti
 
 ### What percentage of possible deals are actually optimal?
 
-**Axiom 7.2**, The Pareto Frontier is Computationally Discoverable, reveals the mathematics of deal optimization. In negotiations with 1,000 possible contract configurations, only 0.75% are Pareto-efficient—meaning you can't improve one party's outcome without worsening the other's.
+**Axiom 7.2 - The Pareto Frontier is Computationally Discoverable.** Reveals the mathematics of deal optimization. In negotiations with 1,000 possible contract configurations, only 0.75% are Pareto-efficient—meaning you can't improve one party's outcome without worsening the other's.
 
 Linear compromises (splitting differences on each issue) always fall inside the frontier, leaving value on the table. To reach the boundary, parties must trade issues where they have differential marginal rates of substitution.
 
@@ -453,7 +453,7 @@ The frontier is a computational problem. Without systematic discovery mechanisms
 
 ### How do you find hidden value in negotiations?
 
-**Axiom 7.3**, Interest-Based Mechanics Through Dimensional Expansion, provides the method. Positions are one-dimensional (linear, single-issue). Interests are n-dimensional (multi-attribute, multi-issue).
+**Axiom 7.3 - Interest-Based Mechanics Through Dimensional Expansion.** Provides the method. Positions are one-dimensional (linear, single-issue). Interests are n-dimensional (multi-attribute, multi-issue).
 
 Value creation occurs through Comparative Advantage trading—if A values X more than Y, and B values Y more than X, trade creates value that neither possesses when negotiating issues separately.
 
@@ -461,7 +461,7 @@ Critical insight: hunt for asymmetries, not common ground. Difference is the eng
 
 ### How do you share information safely?
 
-**Axiom 7.4**, The Information Paradox Resolves Structurally, addresses Arrow's Paradox: revealing your interests enables value creation but creates exploitation vulnerability. Once they know your priorities, they can extract maximum concessions on what matters most.
+**Axiom 7.4 - The Information Paradox Resolves Structurally.** Addresses Arrow's Paradox: revealing your interests enables value creation but creates exploitation vulnerability. Once they know your priorities, they can extract maximum concessions on what matters most.
 
 2025 solutions: Conditional Recall mechanisms use cryptographic commitment to allow full information use with zero leakage risk—parties commit to preferences secretly, algorithms find efficient trades, nobody learns the other's raw preferences.
 
@@ -469,7 +469,7 @@ More accessible alternatives: MESOs (Multiple Equivalent Simultaneous Offers) re
 
 ### Can disagreement about the future create value?
 
-**Axiom 7.5**, Belief Heterogeneity as Asset, transforms disagreement from obstacle to opportunity. When parties disagree about the future, contingent "if-then" agreements enable both to have positive expected value according to their own probability assessments.
+**Axiom 7.5 - Belief Heterogeneity as Asset.** Transforms disagreement from obstacle to opportunity. When parties disagree about the future, contingent "if-then" agreements enable both to have positive expected value according to their own probability assessments.
 
 If you think your product will succeed and the buyer thinks it will fail, structure an earnout: lower upfront payment, higher contingent payment based on performance. Both sides prefer this deal to their alternative according to their own beliefs.
 
@@ -477,7 +477,7 @@ Don't argue about the future—bet on it. Contingent contracts convert disagreem
 
 ### Should you create value first or claim it first?
 
-**Axiom 7.6**, Sequencing is Context-Dependent, reveals there's no universal answer. Temporal distance reduces individual-gain focus (negotiating for outcomes in the far future improves joint outcomes). High complexity demands early integrative mapping. High information asymmetry demands early questions.
+**Axiom 7.6 - Sequencing is Context-Dependent.** Reveals there's no universal answer. Temporal distance reduces individual-gain focus (negotiating for outcomes in the far future improves joint outcomes). High complexity demands early integrative mapping. High information asymmetry demands early questions.
 
 Simultaneity hack: MESOs enable simultaneous creation and claiming—appearing cooperative by offering multiple options while anchoring on your preferred terms.
 
@@ -485,7 +485,7 @@ The context dictates: high trust favors early creation then claiming. Low trust 
 
 ### When is "splitting the difference" actually rational?
 
-**Axiom 7.7**, Endgame Follows Rubinstein Time Decay, establishes the mathematical endgame. Share of pie is proportional to patience (δ). Surplus decays exponentially as rounds persist. Decreasing concession patterns signal approach to reservation point.
+**Axiom 7.7 - Endgame Follows Rubinstein Time Decay.** Establishes the mathematical endgame. Share of pie is proportional to patience (δ). Surplus decays exponentially as rounds persist. Decreasing concession patterns signal approach to reservation point.
 
 Splitting the difference is rational in endgame as a signaling equilibrium—both parties recognize they're near their limits and efficient closure is valuable. But premature splitting halts value creation by locking in positions before the frontier is explored.
 
@@ -493,7 +493,7 @@ The signal to watch: concession patterns. When concessions shrink logarithmicall
 
 ### Will AI level the playing field in negotiation?
 
-**Axiom 7.8**, AI Creates Permanent Information Asymmetry, answers definitively: no. AI won't level the playing field—it amplifies existing information advantages.
+**Axiom 7.8 - AI Creates Permanent Information Asymmetry.** Answers definitively: no. AI won't level the playing field—it amplifies existing information advantages.
 
 Large organizations with more data, better models, and computational resources will execute precision value-claiming against less-equipped counterparts. The information asymmetry that **Axiom 2.4** identified as a kinetic engine gets turbocharged.
 
@@ -566,7 +566,7 @@ Per **Axioms 2.2-2.3**, leverage is multidimensional. Assess all five power base
 
 ### Should I make the first offer in a negotiation?
 
-**Axiom 3.1** shows first offers yield g=0.42 advantage with r=0.62 correlation to final settlement—strong evidence favoring first offers. However, per **Axiom 2.4**, the informed party should quote first. If you have superior information about fair value, anchor first. If your counterpart knows more, let them reveal information before committing.
+**Axiom 3.1** shows first offers yield g=0.42 advantage with r=0.62 correlation to final settlement—strong evidence favoring first offers. However, per **Axiom 2.4 - the informed party should quote first. If you have superior information about fair value.** Anchor first. If your counterpart knows more, let them reveal information before committing.
 
 ### How do I deal with aggressive negotiators?
 
@@ -586,7 +586,7 @@ Per **Axioms 3.5-3.6**, fixed-pie bias causes parties to miss value-creating tra
 
 ### How do you negotiate with someone who lies?
 
-**Axiom 4.4** explains why silence dominates lying—it's harder to catch. **Axiom 4.5** shows that under unraveling conditions, silence becomes confession. Create unraveling conditions by establishing what information should be available and making non-disclosure suspicious. Per **Axiom 4.7**, reputation costs compound—in repeat dealings, lying becomes increasingly expensive.
+**Axiom 4.4** explains why silence dominates lying—it's harder to catch. **Axiom 4.5** shows that under unraveling conditions, silence becomes confession. Create unraveling conditions by establishing what information should be available and making non-disclosure suspicious. Per **Axiom 4.7 - reputation costs compound—in repeat dealings.** Lying becomes increasingly expensive.
 
 ### When should you walk away from a negotiation?
 
@@ -598,15 +598,15 @@ Per **Axioms 3.5-3.6**, fixed-pie bias causes parties to miss value-creating tra
 
 ### What role do emotions play in negotiation?
 
-**Axiom 5.7** establishes that emotion is not noise but an optimizing function. Strategic emotional expression (temperature 0.4-0.6) outperforms both flat affect and extreme emotion. Per **Axiom 5.1**, authentic emotion significantly outperforms performed emotion. Engineer your emotional state rather than suppressing or faking it.
+**Axiom 5.7** establishes that emotion is not noise but an optimizing function. Strategic emotional expression (temperature 0.4-0.6) outperforms both flat affect and extreme emotion. Per **Axiom 5.1 - authentic emotion significantly outperforms performed emotion. Engineer your emotional state rather than suppressing or faking it.
 
 ### How do you create value in a zero-sum negotiation?
 
-By definition, truly zero-sum negotiations cannot create value. But per **Axiom 1.3**, most seemingly zero-sum negotiations can be restructured. Add issues (**Axiom 6.2**), explore interests behind positions (**Axiom 7.3**), use contingent contracts to leverage different beliefs (**Axiom 7.5**), and discover asymmetric preferences that enable trades.
+By definition.** Truly zero-sum negotiations cannot create value. But per **Axiom 1.3 - most seemingly zero-sum negotiations can be restructured. Add issues (**Axiom 6.2**).** Explore interests behind positions (**Axiom 7.3**), use contingent contracts to leverage different beliefs (**Axiom 7.5**), and discover asymmetric preferences that enable trades.
 
 ### What is integrative negotiation?
 
-Per **Axiom 7.3**, integrative negotiation creates value by trading across dimensions where parties have different marginal utilities. Unlike distributive (zero-sum) bargaining over a fixed pie, integrative negotiation expands the pie by finding Pareto improvements where both parties gain.
+Per **Axiom 7.3 - integrative negotiation creates value by trading across dimensions where parties have different marginal utilities. Unlike distributive (zero-sum) bargaining over a fixed pie.** Integrative negotiation expands the pie by finding Pareto improvements where both parties gain.
 
 ### How do you prepare for a high-stakes negotiation?
 
@@ -614,7 +614,7 @@ Apply the four-factor model: (1) **Structure**—strengthen BATNA, assess counte
 
 ### Does negotiation training actually work?
 
-Per **Axiom 7.2**, only 0.75% of possible deals are Pareto-efficient. Training helps negotiators find the efficient frontier by teaching systematic exploration methods. Per **Axiom 3.6**, training also reduces overconfidence-driven failures. However, per **Iron Law VII**, structural improvements (better BATNA, more information) typically outperform tactical training alone.
+Per **Axiom 7.2 - only 0.75% of possible deals are Pareto-efficient. Training helps negotiators find the efficient frontier by teaching systematic exploration methods. Per **Axiom 3.6**.** Training also reduces overconfidence-driven failures. However, per **Iron Law VII**, structural improvements (better BATNA, more information) typically outperform tactical training alone.
 
 ---
 

@@ -89,7 +89,7 @@ The first research vector attacked the central paradox: why does constrained sup
 
 ### Why does Ferrari deliberately limit production?
 
-**Axiom 1.1**, the Tangency Property Violation, reveals the mathematical foundation: Ferrari operates in a fundamentally different economic regime than normal manufacturers. Standard economics assumes the "single-crossing property"—that the marginal cost of consumption is uniformly higher for lower-wealth individuals. When this holds, no Veblen effects can emerge. Brands must price at marginal cost.
+**Axiom 1.1 - the Tangency Property Violation.** Reveals the mathematical foundation: Ferrari operates in a fundamentally different economic regime than normal manufacturers. Standard economics assumes the "single-crossing property"—that the marginal cost of consumption is uniformly higher for lower-wealth individuals. When this holds, no Veblen effects can emerge. Brands must price at marginal cost.
 
 Ferrari exploits a violation of this property identified by economists Bagwell and Bernheim in their 1996 American Economic Review paper. When consumer preferences exhibit what they call the "tangency property," luxury brands can sustain prices above marginal cost as stable Nash equilibria. The constraint itself becomes the product.
 
@@ -97,7 +97,7 @@ The mathematics prove that under these conditions, the full premium above margin
 
 ### Why does wanting a Ferrari feel different from owning one?
 
-**Axiom 1.2**, the Neural Separation of Wanting vs. Liking, explains the neurological engine behind scarcity premiums. Neuroscientist Kent Berridge's research at the University of Michigan demonstrated that "wanting" (incentive salience) and "liking" (hedonic pleasure) operate through completely separate neurological pathways. Dopamine mediates wanting—the motivational drive to pursue rewards. Opioid systems in hedonic hotspots mediate actual consumption pleasure.
+**Axiom 1.2 - the Neural Separation of Wanting vs. Liking.** Explains the neurological engine behind scarcity premiums. Neuroscientist Kent Berridge's research at the University of Michigan demonstrated that "wanting" (incentive salience) and "liking" (hedonic pleasure) operate through completely separate neurological pathways. Dopamine mediates wanting—the motivational drive to pursue rewards. Opioid systems in hedonic hotspots mediate actual consumption pleasure.
 
 This separation creates a critical vulnerability that scarcity exploits. Research by Rothenhoefer and colleagues published in Nature Neuroscience demonstrated that rare rewards amplify dopamine neuron responses even when the conventional hedonic value remains identical. The scarcity itself—independent of any change in the reward's actual pleasure—triggers stronger dopaminergic signaling.
 
@@ -105,7 +105,7 @@ When Ferrari announces a multi-year waitlist, the company engineers a chronic st
 
 ### Do Ferraris actually depreciate?
 
-**Axiom 1.3**, Negative Total Cost of Ownership, inverts normal depreciation physics. For standard goods, Total Cost of Ownership equals Purchase Price minus Residual Value plus Maintenance. A BMW 7-Series loses approximately 50% of value in three years, creating a true consumption cost exceeding $60,000 on a $120,000 purchase.
+**Axiom 1.3 - Negative Total Cost of Ownership.** Inverts normal depreciation physics. For standard goods, Total Cost of Ownership equals Purchase Price minus Residual Value plus Maintenance. A BMW 7-Series loses approximately 50% of value in three years, creating a true consumption cost exceeding $60,000 on a $120,000 purchase.
 
 Artificial scarcity breaks this curve. By producing 14,000 Ferraris annually against demand exceeding 100,000 units, Ferrari creates permanent excess demand that props up resale values. A Ferrari 296 GTB purchased for $350,000 may trade for $340,000-$360,000 after two years—near-zero or negative depreciation. A Patek Philippe Nautilus 5711 bought at $35,000 retail immediately commands over $100,000 on secondary markets.
 
@@ -113,7 +113,7 @@ The calculation becomes: $350,000 purchase minus $360,000 resale plus $10,000 ma
 
 ### Why do Ferrari waitlists make the cars more desirable?
 
-**Axiom 1.4**, the Effort Justification Effect, weaponizes cognitive dissonance. Aronson and Mills demonstrated in 1959 that significant effort invested in obtaining something inflates its perceived value. Participants who underwent embarrassing initiations to join a discussion group rated a deliberately boring discussion significantly more positively than those with mild initiations.
+**Axiom 1.4 - the Effort Justification Effect.** Weaponizes cognitive dissonance. Aronson and Mills demonstrated in 1959 that significant effort invested in obtaining something inflates its perceived value. Participants who underwent embarrassing initiations to join a discussion group rated a deliberately boring discussion significantly more positively than those with mild initiations.
 
 The brain resolves the conflict between "I invested substantial effort" and "the outcome wasn't valuable" by retroactively inflating the perceived value of the outcome. Neural evidence from 2020 ERP research confirms that within high-effort conditions, greater subjective effort experience correlates with larger neural reward responses—the brain literally processes the earned reward as more valuable.
 
@@ -121,7 +121,7 @@ Ferrari's multi-year waitlists, required purchase histories, and allocation lott
 
 ### What happens if Ferrari increases production?
 
-**Axiom 1.5**, the Hysteresis Effect, reveals why scarcity discipline is irreversible. Brand equity exhibits hysteresis—a physics term describing systems where the path taken matters and reversing direction doesn't restore the original state. Crossing accessibility thresholds triggers non-linear value collapse, but recrossing them in reverse does not restore positioning.
+**Axiom 1.5 - the Hysteresis Effect.** Reveals why scarcity discipline is irreversible. Brand equity exhibits hysteresis—a physics term describing systems where the path taken matters and reversing direction doesn't restore the original state. Crossing accessibility thresholds triggers non-linear value collapse, but recrossing them in reverse does not restore positioning.
 
 Jean-Noël Kapferer formalized this as the "dream equation": Dream Value equals Awareness minus Accessibility. When accessibility increases too rapidly, dream value collapses, but reducing accessibility later cannot recreate the original dream. Cadillac's premium over Chevrolet shrank from 150% in 1940 to 30% in 1960 through vehicle downsizing and discounting. Four decades later, Cadillac remains sixth in premium segments—the dilution was permanent.
 
@@ -133,7 +133,7 @@ The second vector investigated a non-obvious phenomenon: Ferrari races cars and 
 
 ### Why does Ferrari's F1 success make road cars worth more?
 
-**Axiom 2.1**, the Three-Layer Transfer Mechanism, maps the physics of legitimacy conversion. Transfer operates through three interdependent layers that must all align: Economic Signaling, Cognitive Generalization, and Sociological Consecration.
+**Axiom 2.1 - the Three-Layer Transfer Mechanism.** Maps the physics of legitimacy conversion. Transfer operates through three interdependent layers that must all align: Economic Signaling, Cognitive Generalization, and Sociological Consecration.
 
 Economic signaling works through the single-crossing condition: high-quality actors face systematically lower costs to produce costly signals than low-quality actors. When Ferrari wins at Le Mans, this represents a massive investment in engineering capability, organizational competence, and risk tolerance. A company that cannot engineer at this level cannot afford to fake the signal.
 
@@ -145,7 +145,7 @@ Remove any layer and the mechanism collapses. This explains why some brands succ
 
 ### Why doesn't McLaren's racing success transfer as well?
 
-**Axiom 2.2**, the Bond Structure, reveals the critical difference: Ferrari constructed a bidirectional hostage situation between its racing and road car divisions. Ferrari's road car reputation is held hostage by its F1 performance, and vice versa. This penalty structure makes quality claims credible because failure in either domain damages both.
+**Axiom 2.2 - the Bond Structure.** Reveals the critical difference: Ferrari constructed a bidirectional hostage situation between its racing and road car divisions. Ferrari's road car reputation is held hostage by its F1 performance, and vice versa. This penalty structure makes quality claims credible because failure in either domain damages both.
 
 McLaren's transfer is weaker because the brand architecture creates a looser bond. The racing operation and road car business historically operated with greater separation. When signals are partitioned, the transfer coefficient approaches zero.
 
@@ -153,7 +153,7 @@ The mechanism functions like umbrella branding dynamics described by economist B
 
 ### Why does "Swiss Made" command a premium that "German Made" doesn't?
 
-**Axiom 2.3**, Signal Specificity vs. Breadth, explains why some origin signals command pricing power while others create only general trust. "Swiss Made" carries a measurable price premium in watches because the signal is narrow and diagnostic—Switzerland is associated specifically with watchmaking excellence. "German Made" covers cars, chemicals, tools, and machinery—the breadth diffuses its diagnostic value.
+**Axiom 2.3 - Signal Specificity vs. Breadth.** Explains why some origin signals command pricing power while others create only general trust. "Swiss Made" carries a measurable price premium in watches because the signal is narrow and diagnostic—Switzerland is associated specifically with watchmaking excellence. "German Made" covers cars, chemicals, tools, and machinery—the breadth diffuses its diagnostic value.
 
 The information-theoretic principle: a signal's value is inversely proportional to the number of hypotheses it supports. Narrow, deep signals like "Swiss watchmaking" or "Italian sports cars" create pricing power. Broad, shallow signals like "German engineering" or "Japanese quality" create general trust but not premium extraction.
 
@@ -165,7 +165,7 @@ The third vector investigated the anthropology of brand-as-tribe. A car is a mac
 
 ### Why do Ferrari owners feel like a tribe?
 
-**Axiom 3.1**, Identity Fusion, describes the dissolution of the psychological boundary between "Self" and "Brand." This is not metaphor. Research on identity fusion demonstrates that at high levels, individuals process attacks on their in-group as physical threats to the self. The brain activates the same neural circuits.
+**Axiom 3.1 - Identity Fusion.** Describes the dissolution of the psychological boundary between "Self" and "Brand." This is not metaphor. Research on identity fusion demonstrates that at high levels, individuals process attacks on their in-group as physical threats to the self. The brain activates the same neural circuits.
 
 Ferrari hijacks evolved neural machinery used for detecting kinship and tribal membership. Evolutionary psychologists John Tooby and Leda Cosmides mapped these coalitional psychology systems—ancient circuits designed to distinguish in-group from out-group. Ferrari's tribal markers (the Prancing Horse, Rosso Corsa, the engine sound) serve as shibboleths that activate these systems.
 
@@ -173,7 +173,7 @@ When identity fusion occurs, defection—buying a Lamborghini, criticizing the b
 
 ### What makes Ferrari events feel different from normal car shows?
 
-**Axiom 3.2**, Collective Effervescence, describes the binding mechanism. Sociologist Émile Durkheim identified collective effervescence as the emotional electricity generated when individuals engage in synchronized activity around shared symbols. This emotional energy creates a binding force that fuses participants to the group.
+**Axiom 3.2 - Collective Effervescence.** Describes the binding mechanism. Sociologist Émile Durkheim identified collective effervescence as the emotional electricity generated when individuals engage in synchronized activity around shared symbols. This emotional energy creates a binding force that fuses participants to the group.
 
 Ferrari events (Cavalcade, track days, factory visits) are not marketing. They are rituals designed to generate collective effervescence. The mechanics require co-presence, shared focus, and synchronized action. When participants gather at Maranello, focus on the same objects (cars, history, founders), and engage in synchronized activities (driving together, toasting together), the ritual generates emotional energy that transforms the commercial relationship into something sacred.
 
@@ -181,7 +181,7 @@ This emotional electricity cannot be manufactured through advertising. It requir
 
 ### Why does the pain of Ferrari ownership strengthen loyalty?
 
-**Axiom 3.3**, Shared Dysphoria, reveals a counterintuitive bonding mechanism: shared suffering creates stronger bonds than shared victory. The waitlists, the reliability quirks, the high costs, the dealership games—these filter out casual participants and create a "survivor" mentality among the core tribe.
+**Axiom 3.3 - Shared Dysphoria.** Reveals a counterintuitive bonding mechanism: shared suffering creates stronger bonds than shared victory. The waitlists, the reliability quirks, the high costs, the dealership games—these filter out casual participants and create a "survivor" mentality among the core tribe.
 
 The anthropological literature on initiation rituals demonstrates that the pain of ordeal transmutes a transaction into a trophy of endurance. The "pain of payment" and the "pain of patience" serve as initiation costs that make membership more valuable by making it more costly to achieve.
 
@@ -193,7 +193,7 @@ The fourth vector investigated an anomaly: most manufactured goods depreciate. C
 
 ### What makes some Ferraris appreciate in value?
 
-**Axiom 4.1**, the Scarcity Credibility Threshold, identifies the first requirement: scarcity must be perceived as irreversible and structural, not marketing theater. Once the constraint is proven to be artificial (through oversupply), value collapses instantly. To maintain appreciation dynamics, the brand must prove it cannot or will not scale to meet demand.
+**Axiom 4.1 - the Scarcity Credibility Threshold.** Identifies the first requirement: scarcity must be perceived as irreversible and structural, not marketing theater. Once the constraint is proven to be artificial (through oversupply), value collapses instantly. To maintain appreciation dynamics, the brand must prove it cannot or will not scale to meet demand.
 
 Ferrari's credibility derives from decades of consistent under-supply. The market believes the constraint is structural—rooted in Ferrari's identity, not just a tactical choice that could change with new management. This belief is self-reinforcing: because buyers expect appreciation, they accept waitlists; because they accept waitlists, supply remains constrained; because supply remains constrained, appreciation continues.
 
@@ -201,7 +201,7 @@ Nike learned this lesson negatively. When the company flooded the market with "l
 
 ### Why does Ferrari require previous ownership for limited editions?
 
-**Axiom 4.2**, the Gatekeeper Architecture, reveals the purpose of non-monetary barriers. Access requires "Relationship Equity"—time, loyalty, and prior spend—not just financial capital. This prevents wealth alone from clearing the market and stabilizes the hierarchy.
+**Axiom 4.2 - the Gatekeeper Architecture.** Reveals the purpose of non-monetary barriers. Access requires "Relationship Equity"—time, loyalty, and prior spend—not just financial capital. This prevents wealth alone from clearing the market and stabilizes the hierarchy.
 
 By adding non-monetary costs, Ferrari raises the effective price beyond the sticker price, filtering for true believers over speculators. An SF90 allocation requires years of relationship-building, attendance at events, and demonstrated brand alignment. The car is awarded after demonstrated loyalty, not purchased after wire transfer.
 
@@ -209,7 +209,7 @@ This gatekeeper architecture serves dual functions: it filters for committed own
 
 ### How do secondary markets validate appreciation?
 
-**Axiom 4.3**, the Secondary Market Feedback Loop, describes the mechanism by which resale premiums reinforce primary demand. When resale prices exceed retail, this premium serves multiple functions: it confirms genuine scarcity versus manufactured marketing, it provides free social proof of value, and it attracts speculative demand that further constrains supply.
+**Axiom 4.3 - the Secondary Market Feedback Loop.** Describes the mechanism by which resale premiums reinforce primary demand. When resale prices exceed retail, this premium serves multiple functions: it confirms genuine scarcity versus manufactured marketing, it provides free social proof of value, and it attracts speculative demand that further constrains supply.
 
 Platforms like StockX and Chrono24 solved critical infrastructure problems: price discovery (real-time market-clearing prices), authentication (trust for stranger-to-stranger transactions), and liquidity (transforming theoretically appreciating goods into practically liquid assets). This infrastructure converted sneakers and watches into tradeable assets with market dynamics comparable to commodity futures.
 
@@ -217,7 +217,7 @@ The feedback operates bidirectionally: primary scarcity creates secondary premiu
 
 ### What is mimetic desire and how does Ferrari exploit it?
 
-**Axiom 4.4**, Mimetic Dominance-Seeking, identifies the deepest psychological driver: philosopher René Girard's theory that we desire what models of prestige desire. Research from Chicago Booth demonstrates that goods become valuable specifically because others are visibly excluded from obtaining them.
+**Axiom 4.4 - Mimetic Dominance-Seeking.** Identifies the deepest psychological driver: philosopher René Girard's theory that we desire what models of prestige desire. Research from Chicago Booth demonstrates that goods become valuable specifically because others are visibly excluded from obtaining them.
 
 The experimental proof: when participants knew others were randomly excluded but uninterested, exclusion premiums disappeared. When participants knew others were excluded and desired the item, premiums reached over 50%. The value is the social relationship between owners and non-owners, not the object's properties.
 
@@ -229,7 +229,7 @@ The fifth vector investigated iconic recognition: Ferrari is recognizable from a
 
 ### How did Ferrari claim ownership of an entire color?
 
-**Axiom 5.1**, Hebbian Consolidation, maps the neurological mechanism: "neurons that fire together, wire together." When a sensory input (Ferrari's Rosso Corsa) repeatedly co-activates with a brand concept, NMDA receptors function as molecular coincidence detectors, triggering calcium cascades that initiate protein synthesis and structural synaptic changes.
+**Axiom 5.1 - Hebbian Consolidation.** Maps the neurological mechanism: "neurons that fire together, wire together." When a sensory input (Ferrari's Rosso Corsa) repeatedly co-activates with a brand concept, NMDA receptors function as molecular coincidence detectors, triggering calcium cascades that initiate protein synthesis and structural synaptic changes.
 
 The process requires 10-20 repetitions for mere exposure effects to peak, with approximately 10 hours of perceptual training needed for plateau performance. Through decades of consistent pairing—red + prancing horse + engine sound—Ferrari literally rewired collective perception.
 
@@ -237,7 +237,7 @@ Research confirms that color categories are represented not in visual cortex but
 
 ### Why is Ferrari's engine sound so distinctive?
 
-**Axiom 5.2**, Spectral Dominance Through Engineering, reveals that sensory ownership requires physics-level design, not marketing-level messaging. Ferrari's flat-plane crankshaft uses 180-degree spacing, creating perfect alternation in firing order. This geometry produces evenly spaced exhaust pulses that reinforce rather than interfere, resulting in a sound signature dominated by odd-order harmonics at higher fundamental frequency than cross-plane equivalents.
+**Axiom 5.2 - Spectral Dominance Through Engineering.** Reveals that sensory ownership requires physics-level design, not marketing-level messaging. Ferrari's flat-plane crankshaft uses 180-degree spacing, creating perfect alternation in firing order. This geometry produces evenly spaced exhaust pulses that reinforce rather than interfere, resulting in a sound signature dominated by odd-order harmonics at higher fundamental frequency than cross-plane equivalents.
 
 The harmonic structure creates "tonal" rather than "noisy" sound—resembling a brass instrument more than a machine. This high-frequency tonality penetrates background noise more effectively, creating high auditory salience. Research confirms "sportiness" correlates with specific carefully tuned roughness profiles—Ferrari minimizes dissonant roughness while maximizing consonant roughness that conveys power.
 
@@ -245,7 +245,7 @@ The cue physically occupies a unique position in the sensory spectrum that compe
 
 ### Why is Ferrari's sound more powerful than a jingle?
 
-**Axiom 5.3**, Indexical Authenticity, draws from semiotician Charles Sanders Peirce's trichotomy of signs: Icons (resembling referents), Indices (causally connected), and Symbols (arbitrarily conventional). Most brands operate as Symbols—the connection between logo and product is marketing fiction requiring training.
+**Axiom 5.3 - Indexical Authenticity.** Draws from semiotician Charles Sanders Peirce's trichotomy of signs: Icons (resembling referents), Indices (causally connected), and Symbols (arbitrarily conventional). Most brands operate as Symbols—the connection between logo and product is marketing fiction requiring training.
 
 Ferrari achieves rarer Indexicality: the engine sound is an Index of power, not an arbitrary jingle but the direct physical result of flat-plane crank engineering. It is the acoustic footprint of the mechanical object. The sound is the performance itself.
 
@@ -253,7 +253,7 @@ Indexical signs cannot be faked as symbols can be. When a brand owns an indexica
 
 ### Can competitors steal Ferrari's red?
 
-**Axiom 5.4**, Categorical Capture Through Synecdoche, describes the defensive moat created when a part represents the whole. "Red" is no longer just a color for Ferrari; it has become a synecdoche for the brand itself. Research demonstrates "when you show a child a picture of a red car, they'll say Ferrari."
+**Axiom 5.4 - Categorical Capture Through Synecdoche.** Describes the defensive moat created when a part represents the whole. "Red" is no longer just a color for Ferrari; it has become a synecdoche for the brand itself. Research demonstrates "when you show a child a picture of a red car, they'll say Ferrari."
 
 This creates Category Capture—a defensive moat where competitors using that color risk reinforcing Ferrari's equity rather than their own. If Lamborghini releases a red supercar, the consumer's brain, primed by strong pattern completion of Red equals Ferrari, may misidentify or subconsciously attribute qualities to Ferrari.
 
@@ -261,7 +261,7 @@ This forces competitors to occupy secondary color territories (Lamborghini with 
 
 ### What threatens Ferrari's sonic identity?
 
-**Axiom 5.5**, the Electrification Extinction Threat, identifies the existential risk: associative extinction occurs when a conditioned stimulus (the red car) is presented repeatedly without the unconditioned stimulus (V8 sound). As Ferrari transitions to EVs, the cross-modal correspondence breaks.
+**Axiom 5.5 - the Electrification Extinction Threat.** Identifies the existential risk: associative extinction occurs when a conditioned stimulus (the red car) is presented repeatedly without the unconditioned stimulus (V8 sound). As Ferrari transitions to EVs, the cross-modal correspondence breaks.
 
 If the "red car" visual pairs with "silence" or "synthetic whine" lacking flat-plane physics, the brain detects prediction error. The strong pattern completion fails. The "Ferrari" engram—fundamentally including engine note—is not fully activated. Over time, if the new electric experience doesn't provide equally potent sensory reward, the associative link weakens.
 
@@ -273,7 +273,7 @@ The sixth vector attacked the brand elasticity paradox: Pierre Cardin licensed e
 
 ### Why did Pierre Cardin's licensing destroy the brand?
 
-**Axiom 6.1**, the Dream Equation, provides the mathematical framework: Luxury Value equals Awareness minus Penetration. Desire requires a gap between how many people know the brand and how many people own it. Increasing ownership reduces desire mathematically.
+**Axiom 6.1 - the Dream Equation.** Provides the mathematical framework: Luxury Value equals Awareness minus Penetration. Desire requires a gap between how many people know the brand and how many people own it. Increasing ownership reduces desire mathematically.
 
 Pierre Cardin maximized penetration without protecting the gap. At peak, the brand had over 800 licenses across every conceivable category—furniture, frying pans, institutional uniforms, sardines. The more licenses issued, the more the "dream value" collapsed. The mathematics are unforgiving: when everyone can access the brand, no one wants it.
 
@@ -281,7 +281,7 @@ Jean-Noël Kapferer's research formalized this as luxury's fundamental constrain
 
 ### How does Ferrari extend without destroying its brand?
 
-**Axiom 6.2**, the Dual Engine Architecture, reveals Ferrari's structural solution: separate the "Dream Engine" (Scarcity/Cars) from the "Cash Engine" (Reach/Merchandise). These must operate in non-competing utility curves to avoid dilution.
+**Axiom 6.2 - the Dual Engine Architecture.** Reveals Ferrari's structural solution: separate the "Dream Engine" (Scarcity/Cars) from the "Cash Engine" (Reach/Merchandise). These must operate in non-competing utility curves to avoid dilution.
 
 The ubiquity of the Symbol (the cap, the t-shirt) amplifies desire for the Object (the car) only if access to the Object remains restricted. Ferrari merchandise serves as advertising that pays the company rather than costing it. Every person wearing a Ferrari cap who cannot afford a Ferrari reinforces the gap between awareness and access.
 
@@ -289,7 +289,7 @@ The critical constraint: the merchandise must never substitute for the car. A Fe
 
 ### What is brand entropy and how do you avoid it?
 
-**Axiom 6.3**, Brand Entropy, applies information theory to brand value: a brand is an information system, and incoherent extensions increase entropy (noise), destroying the brand's function as a risk-reduction heuristic.
+**Axiom 6.3 - Brand Entropy.** Applies information theory to brand value: a brand is an information system, and incoherent extensions increase entropy (noise), destroying the brand's function as a risk-reduction heuristic.
 
 When a brand exhibits high entropy, the variance in quality between products becomes too high for consumers to predict outcomes. Research demonstrates that approximately 55% of the total effect of entropy on brand preference is mediated by risk perception. Cardin's brand became noise—a luxury couture gown and a licensed toilet seat cover under the same name. The consumer could no longer use "Pierre Cardin" as a quality signal.
 
@@ -297,7 +297,7 @@ Ferrari maintains low entropy by imposing strict quality governance on every ext
 
 ### Why is downward extension more dangerous than horizontal extension?
 
-**Axiom 6.4**, the Vertical Extension Asymmetry, reveals a critical distinction: horizontal extensions (category jumps) and vertical extensions (up/down market) operate through different mechanical pathways. Research by Childs, Jin, and Tullar demonstrated that vertical extensions dilute parent brands while horizontal extensions do not—and dilution is strongest for premium brands.
+**Axiom 6.4 - the Vertical Extension Asymmetry.** Reveals a critical distinction: horizontal extensions (category jumps) and vertical extensions (up/down market) operate through different mechanical pathways. Research by Childs, Jin, and Tullar demonstrated that vertical extensions dilute parent brands while horizontal extensions do not—and dilution is strongest for premium brands.
 
 Upward extensions risk credibility challenges but don't inherently damage core equity. Downward extensions directly threaten the exclusivity and quality signals that constitute prestige brand value. Even modest discounting (20% below parent price) causes measurable dilution regardless of perceived fit.
 
@@ -309,7 +309,7 @@ The seventh vector investigated the social physics of status display. A Lamborgh
 
 ### Why do some luxury cars get respect while others get eye-rolls?
 
-**Axiom 7.1**, the Capital Composition Mismatch, identifies the detection mechanism: status signals fail when they expose a thermodynamic disequilibrium between capital types. Pierre Bourdieu identified three forms of cultural capital: embodied (dispositions absorbed through years of socialization), objectified (material goods), and institutionalized (credentials).
+**Axiom 7.1 - the Capital Composition Mismatch.** Identifies the detection mechanism: status signals fail when they expose a thermodynamic disequilibrium between capital types. Pierre Bourdieu identified three forms of cultural capital: embodied (dispositions absorbed through years of socialization), objectified (material goods), and institutionalized (credentials).
 
 Embodied capital has a non-compressible acquisition timeline—it requires intergenerational transmission and cannot be purchased instantaneously. When an individual possesses high economic capital but insufficient embodied cultural capital, they can acquire objectified capital (the car) but cannot acquire the disposition to deploy it naturally.
 
@@ -317,7 +317,7 @@ This creates a detectable signature: visible effort where effortlessness is expe
 
 ### Why do billionaires wear cheap watches?
 
-**Axiom 7.2**, the Countersignaling Equilibrium, explains the paradox through game theory. The Feltovich-Harbaugh-To model demonstrates why the highest-status individuals often signal downward rather than upward. In a three-type system (Low, Medium, High quality), when observers have access to noisy exogenous information beyond the focal signal:
+**Axiom 7.2 - the Countersignaling Equilibrium.** Explains the paradox through game theory. The Feltovich-Harbaugh-To model demonstrates why the highest-status individuals often signal downward rather than upward. In a three-type system (Low, Medium, High quality), when observers have access to noisy exogenous information beyond the focal signal:
 
 Low types cannot effectively signal, so they don't try. Medium types must signal conspicuously—otherwise they might be mistaken for Lows. High types don't signal—because reputation and social networks sufficiently separate them from Lows, and their primary concern becomes being mistaken for anxious Mediums.
 
@@ -325,7 +325,7 @@ The billionaire's $15 Casio becomes the costly signal precisely because only som
 
 ### What makes Ferrari acceptable where Lamborghini is gauche?
 
-**Axiom 7.3**, the Friction Coefficient, reveals the key variable: a status signal's credibility correlates inversely with the dimensionality of its acquisition barrier. Signals acquirable solely through financial liquidity encode only one variable: "I had $300,000." Signals requiring multidimensional friction—relational capital, historical knowledge, vetting processes, waiting periods—encode multiple variables: "I had the money AND the patience AND the relationships AND the cultural literacy."
+**Axiom 7.3 - the Friction Coefficient.** Reveals the key variable: a status signal's credibility correlates inversely with the dimensionality of its acquisition barrier. Signals acquirable solely through financial liquidity encode only one variable: "I had $300,000." Signals requiring multidimensional friction—relational capital, historical knowledge, vetting processes, waiting periods—encode multiple variables: "I had the money AND the patience AND the relationships AND the cultural literacy."
 
 Ferrari has engineered artificial friction into its purchasing process: limited-edition models require ownership history, dealer relationships, event attendance, and demonstrated brand alignment. The car is awarded after demonstrated loyalty, not purchased after wire transfer.
 
@@ -335,7 +335,7 @@ The equation for signal credibility: Credibility equals Dimensions of Friction R
 
 ### When does showing wealth trigger admiration versus resentment?
 
-**Axiom 7.4**, the Envy Bifurcation Mechanism, maps the psychological routing: social reception of status signals routes through a dual-process mechanism governed by two cognitive appraisals—Perceived Deservingness and Attainability.
+**Axiom 7.4 - the Envy Bifurcation Mechanism.** Maps the psychological routing: social reception of status signals routes through a dual-process mechanism governed by two cognitive appraisals—Perceived Deservingness and Attainability.
 
 Benign envy triggers when the observer perceives the advantage as deserved (earned through effort or talent) and believes they could potentially achieve similar status. Outcome: admiration, aspiration. Malicious envy triggers when the advantage is perceived as undeserved (luck, inheritance) or the observer feels zero ability to change their situation. Outcome: resentment, hostility.
 
@@ -345,7 +345,7 @@ Status signals require accompanying "permission structures"—narratives that ju
 
 ### What is "quiet luxury" and why does it work?
 
-**Axiom 7.5**, the IYKYK Asymmetry, describes the highest-status signaling mode: frequency-selective filters visible to insiders while invisible to outsiders. The Han-Nunes-Drèze taxonomy identified "Patricians" (high wealth, low status need) who signal horizontally to peers through subtle cues undetectable to non-targets.
+**Axiom 7.5 - the IYKYK Asymmetry.** Describes the highest-status signaling mode: frequency-selective filters visible to insiders while invisible to outsiders. The Han-Nunes-Drèze taxonomy identified "Patricians" (high wealth, low status need) who signal horizontally to peers through subtle cues undetectable to non-targets.
 
 Analysis of 465 Gucci and Louis Vuitton handbags found an inverted price-prominence relationship—quieter bags commanded higher prices while logo-heavy versions were entry-level. Patricians pay premiums for subtlety because their signals target horizontal peer recognition, not vertical mass legibility.
 
