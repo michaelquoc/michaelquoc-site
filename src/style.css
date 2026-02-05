@@ -373,6 +373,13 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: 600; color: #FFF; }
     line-height: 1.5;
 }
 
+/* --- TREATISE BOLD TEXT --- */
+.treatise-article strong,
+.treatise-article b {
+    font-weight: 600;
+    color: #FFF;
+}
+
 /* --- TREATISE HYPERLINKS --- */
 .treatise-article a {
     color: var(--scuderia-red);
