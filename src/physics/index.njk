@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+title: "Axiomatic Physics | Michael Quoc"
+description: "Irreducible truths derived from adversarial deconstruction. First-principles analyses spanning neuroscience, economics, biomechanics, and brand theory."
+permalink: /physics/
+---
+{% import "components/macros/cards.njk" as card %}
+
+{# --- HERO --- #}
+<header class="section" style="border-bottom: none; padding-top: 6rem;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem;">
+        <p class="mono-label" style="color: var(--scuderia-red); margin-bottom: 0;">// AXIOMATIC PHYSICS</p>
+        <p class="mono-label" style="opacity: 0.5; margin-bottom: 0;">{{ collections.physics | length }} DOCUMENTS</p>
+    </div>
+
+    <h1 class="h1-hero" style="font-size: clamp(2rem, 4vw, 3.2rem);">
+        Irreducible Truths Derived from <br>
+        <span style="color: var(--text-secondary);">Adversarial Deconstruction.</span>
+    </h1>
+
+    <p class="body-text" style="margin-bottom: 0;">
+        Each document applies the <a href="/physics/arc-protocol/" style="color: var(--scuderia-red); border-bottom: 1px solid rgba(255,79,0,0.4);">ARC Protocol</a> to a domain—colliding neuroscience, economics, game theory, and physics to extract axioms that survive cross-domain attack.
+    </p>
+</header>
+
+{# --- ARTICLE GRID --- #}
+<section class="section" style="padding-top: 3rem;">
+    <div class="physics-index-grid">
+        {% for treatise in collections.physics | sort(attribute="date") | reverse %}
+            {% if not treatise.data.index_exclude %}
+                {{ card.physics(
+                    title=treatise.data.title, 
+                    subtitle=treatise.data.subtitle, 
+                    gravity=treatise.data.gravity, 
+                    date=treatise.date | dateDisplay, 
+                    url=treatise.url, 
+                    entities=treatise.data.aeo_entities
+                ) }}
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>

@@ -478,9 +478,17 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: 600; color: #FFF; }
     margin-bottom: 0.75rem;
 }
 
+/* --- PHYSICS INDEX PAGE --- */
+.physics-index-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
 /* 8. Mobile */
 @media (max-width: 1000px) {
     .treatise-grid { grid-template-columns: 1fr; gap: 2rem; }
     .logic-map { display: none; }
     .treatise-meta-block { flex-wrap: wrap; gap: 2rem; }
+    .physics-index-grid { grid-template-columns: 1fr; }
 }

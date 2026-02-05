@@ -117,7 +117,7 @@ description: Founder of Demand.io. Building sovereign systems to force AI out of
     </div>
 </section>
 
-{# --- 04: PHYSICS (DYNAMIC & FILTERED) --- #}
+{# --- 04: PHYSICS (LATEST 3 + LINK) --- #}
 <section class="section" id="physics">
     <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom: 3rem;">
         <div>
@@ -126,14 +126,13 @@ description: Founder of Demand.io. Building sovereign systems to force AI out of
                 Irreducible truths derived from adversarial deconstruction.
             </p>
         </div>
+        <a href="/physics/" class="mono-label" style="text-decoration:none; color: var(--scuderia-red); white-space: nowrap;">VIEW ALL {{ collections.physics | length }} -></a>
     </div>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+        {% set count = { val: 0 } %}
         {% for treatise in collections.physics | sort(attribute="date") | reverse %}
-            
-            {# SYSTEM FILTER: Check for Exclusion Flag #}
-            {% if not treatise.data.index_exclude %}
-            
+            {% if not treatise.data.index_exclude and count.val < 3 %}
                 {{ card.physics(
                     title=treatise.data.title, 
                     subtitle=treatise.data.subtitle, 
@@ -142,9 +141,8 @@ description: Founder of Demand.io. Building sovereign systems to force AI out of
                     url=treatise.url, 
                     entities=treatise.data.aeo_entities
                 ) }}
-                
+                {% set count = { val: count.val + 1 } %}
             {% endif %}
-            
         {% endfor %}
     </div>
 </section>
