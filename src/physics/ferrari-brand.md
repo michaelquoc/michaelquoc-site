@@ -1,5 +1,5 @@
 ---
-title: "The Physics of Ferrari"
+title: "The Physics of the Ferrari Brand"
 subtitle: "The Neuroscience, Game Theory & Tribal Dynamics Behind the World's Most Valuable Automotive Brand"
 seo_title: "Why Is Ferrari So Expensive? The Physics of Scarcity, Status & $350,000 Sports Cars"
 description: "Ferrari produces 14,000 cars yearly while rejecting 100,000+ buyers. 50 axioms reveal the neuroscience, game theory, and tribal dynamics that make price increases fuel demand."
